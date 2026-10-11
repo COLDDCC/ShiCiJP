@@ -292,6 +292,7 @@
       <article class="concept${isKnown ? " known" : ""}" id="w-${encodeURIComponent(w.key)}">
         <div class="concept-word">
           <div class="representation${w.word.length > 7 ? " longer" : w.word.length > 4 ? " long" : ""}" lang="ja">${rubyHtml(w.word, w.reading)}</div>
+          <button type="button" class="speak-word" data-speak="${esc(w.word)}" data-reading="${esc(w.reading || w.word)}" aria-label="朗读 ${esc(w.word)}" title="朗读日语">🔊</button>
           <div class="status">
             ${tags.join(" ")}
             <a href="#" class="status-link know" data-id="${esc(knownId(w))}">${isKnown ? "撤销认识" : "✓ 认识"}</a>
