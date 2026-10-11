@@ -49,6 +49,7 @@
         <input type="file" id="fileInput" accept=".txt,text/plain" hidden>
       </label>
     </div>
+    <button type="button" id="readerToggle" class="nav-btn" aria-expanded="false" aria-controls="readerPanel">Excel 朗读</button>
     <form class="search" id="searchForm" onsubmit="return false">
       <div class="search-inner">
         <label class="search-type" title="只看某个 JLPT 等级及以上">
@@ -73,6 +74,23 @@
   </div>
   <div class="row"><p id="status" class="status"></p></div>
 
+  <section class="row" id="readerPanel" hidden>
+    <div class="reader-panel">
+      <h2>Excel 连续朗读</h2>
+      <p class="minor">选择表格里的任意一列，从上到下播放。文件仅在本地浏览器读取。</p>
+      <label>上传 Excel / CSV <input id="readerFile" type="file" accept=".xlsx,.xls,.csv"></label>
+      <div class="reader-controls">
+        <label>工作表 <select id="readerSheet"></select></label>
+        <label>朗读列 <select id="readerCol"></select></label>
+        <label>语速 <select id="readerSpeed"><option value=".65">0.65×</option><option value=".85" selected>0.85×</option><option value="1">1×</option><option value="1.2">1.2×</option></select></label>
+        <label>每词重复 <select id="readerRepeat"><option value="1">1 次</option><option value="2" selected>2 次</option><option value="3">3 次</option><option value="5">5 次</option></select></label>
+        <label>间隔 <select id="readerGap"><option value="0">0 秒</option><option value="1" selected>1 秒</option><option value="3">3 秒</option><option value="5">5 秒</option></select></label>
+      </div>
+      <label class="minor"><input id="readerHeader" type="checkbox" checked> 跳过第一行表头</label>
+      <div class="reader-actions"><button type="button" class="button" id="readerStart">▶ 开始</button><button type="button" class="button secondary-btn" id="readerPause">暂停</button><button type="button" class="button secondary-btn" id="readerStop">停止</button><span id="readerProgress">0 / 0</span></div>
+      <p class="minor" id="readerStatus" role="status">请先选择表格</p><div id="readerPreview" class="reader-preview"></div>
+    </div>
+  </section>
   <main class="row">
     <section id="kanjiView" class="kanji-view" hidden></section>
     <section id="sentence" class="zen" lang="ja" hidden></section>
@@ -178,6 +196,9 @@
   <script src="js/kanji.js"></script>
   <script src="js/xlsx.js"></script>
   <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="js/reader.js"></script>
+  <script>document.getElementById("readerToggle").addEventListener("click",function(){const p=document.getElementById("readerPanel");p.hidden=!p.hidden;this.setAttribute("aria-expanded",String(!p.hidden));if(!p.hidden)p.scrollIntoView({behavior:"smooth",block:"start"});});</script>
   <script>
     // 离线缓存：第二次打开不用再下载 18 MB 词典（claude.ai 网页版里不启用）
     if ("serviceWorker" in navigator && !self.CISHU_DICT_SUFFIX && /^https:|^http:\/\/localhost/.test(location.href))
