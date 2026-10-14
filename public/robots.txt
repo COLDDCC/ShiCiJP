@@ -6,3 +6,5 @@ Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
+
+Sitemap: https://shicijp.com/sitemap.xml
