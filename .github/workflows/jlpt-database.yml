@@ -1,0 +1,25 @@
+name: JLPT Database Checks
+on:
+  push:
+    paths:
+      - 'database/**'
+      - 'data-src/n*.csv'
+      - 'scripts/build_jlpt_db.py'
+      - 'scripts/test_jlpt_db.py'
+      - '.github/workflows/jlpt-database.yml'
+  pull_request:
+    paths:
+      - 'database/**'
+      - 'data-src/n*.csv'
+      - 'scripts/build_jlpt_db.py'
+      - 'scripts/test_jlpt_db.py'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test JLPT database
+        run: python3 scripts/test_jlpt_db.py
