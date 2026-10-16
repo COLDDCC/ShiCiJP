@@ -32,7 +32,8 @@
       "meaning_zh": "苹果",
       "example_ja": "りんごを食べます。",
       "example_zh": "吃苹果。",
-      "level_hint": "N5"
+      "level_hint": "N5",
+      "variant_of": "林檎"
     },
     {
       "expression": "友達",
@@ -80,7 +81,8 @@
       "meaning_zh": "包；书包",
       "example_ja": "鞄を買いました。",
       "example_zh": "买了一个包。",
-      "level_hint": "N5"
+      "level_hint": "N5",
+      "variant_of": "かばん"
     },
     {
       "expression": "会う",
