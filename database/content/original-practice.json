@@ -83,6 +83,226 @@
           "grammar": [
             "ます"
           ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q3",
+          "number": 3,
+          "stem": "田中さんは いま 教室（　）います。",
+          "correct_option": 2,
+          "explanation_zh": "存在动词「います」说明人或动物在哪里时，所在地点通常使用「に」。",
+          "options": [
+            {
+              "text": "を",
+              "explanation_zh": "宾语助词，不能表示存在地点。"
+            },
+            {
+              "text": "に",
+              "explanation_zh": "表示存在地点，正确。"
+            },
+            {
+              "text": "で",
+              "explanation_zh": "通常标记动作发生地点，而非「います」的存在地点。"
+            },
+            {
+              "text": "へ",
+              "explanation_zh": "表示移动方向，不适合这里的存在状态。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "教室",
+              "reading": "きょうしつ",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "に"
+          ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q4",
+          "number": 4,
+          "stem": "この りんごは とても（　）です。",
+          "correct_option": 1,
+          "explanation_zh": "形容苹果味道甜，用い形容词「あまい」直接接「です」。",
+          "options": [
+            {
+              "text": "あまい",
+              "explanation_zh": "い形容词原形可直接接「です」，正确。"
+            },
+            {
+              "text": "あまく",
+              "explanation_zh": "连用形，不能在此直接接「です」表示肯定。"
+            },
+            {
+              "text": "あまかった",
+              "explanation_zh": "过去式，和本句当前描述不一致。"
+            },
+            {
+              "text": "あまさ",
+              "explanation_zh": "名词形式，不能直接表达这里的形容词谓语。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "りんご",
+              "reading": "りんご",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "い形容词"
+          ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q5",
+          "number": 5,
+          "stem": "あした 友だち（　）映画を 見ます。",
+          "correct_option": 3,
+          "explanation_zh": "表示与某人一起做事，常用「と」。这里是「友だちと映画を見る」。",
+          "options": [
+            {
+              "text": "を",
+              "explanation_zh": "表示宾语；电影已经由「映画を」标记。"
+            },
+            {
+              "text": "に",
+              "explanation_zh": "不表示此句的共同参与者。"
+            },
+            {
+              "text": "と",
+              "explanation_zh": "表示一起做事的对象，正确。"
+            },
+            {
+              "text": "が",
+              "explanation_zh": "表示主语，不符合本句意思。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "友達",
+              "reading": "ともだち",
+              "occurrence_count": 1
+            },
+            {
+              "expression": "映画",
+              "reading": "えいが",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "と"
+          ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q6",
+          "number": 6,
+          "stem": "わたしの へやは あまり（　）。",
+          "correct_option": 4,
+          "explanation_zh": "「あまり」表示“不太……”时通常与否定形式呼应。「ひろくありません」表示不太宽敞。",
+          "options": [
+            {
+              "text": "ひろいです",
+              "explanation_zh": "肯定表达，不能与这里的「あまり」自然呼应。"
+            },
+            {
+              "text": "ひろかったです",
+              "explanation_zh": "过去肯定表达，不能与「あまり」构成“不太”的意思。"
+            },
+            {
+              "text": "ひろくて",
+              "explanation_zh": "て形，不构成完整的句末否定谓语。"
+            },
+            {
+              "text": "ひろくありません",
+              "explanation_zh": "い形容词礼貌否定式，正确。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "部屋",
+              "reading": "へや",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "あまり～ない"
+          ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q7",
+          "number": 7,
+          "stem": "日曜日に スーパーへ 買い物に（　）。",
+          "correct_option": 1,
+          "explanation_zh": "「買い物に行きます」表示去购物。移动目的可以用动词ます形去掉ます后接「に行く」。",
+          "options": [
+            {
+              "text": "行きます",
+              "explanation_zh": "与「買い物に」搭配，表示去购物，正确。"
+            },
+            {
+              "text": "あります",
+              "explanation_zh": "表示无生命物体存在，不能表达人的移动。"
+            },
+            {
+              "text": "います",
+              "explanation_zh": "表示人或动物存在，不能表达去购物。"
+            },
+            {
+              "text": "できます",
+              "explanation_zh": "表示能力或事情完成，不适合这里的移动目的。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "日曜日",
+              "reading": "にちようび",
+              "occurrence_count": 1
+            },
+            {
+              "expression": "買い物",
+              "reading": "かいもの",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "目的のに"
+          ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q8",
+          "number": 8,
+          "stem": "この かばんは きのう 買った（　）です。",
+          "correct_option": 2,
+          "explanation_zh": "「買ったもの」意为买的东西，使用形式名词「もの」承接前面的修饰句。",
+          "options": [
+            {
+              "text": "こと",
+              "explanation_zh": "偏向事情或抽象事件，通常不指眼前的包。"
+            },
+            {
+              "text": "もの",
+              "explanation_zh": "指具体物品，正确。"
+            },
+            {
+              "text": "ところ",
+              "explanation_zh": "表示地点、时间阶段等，不指这里的物品。"
+            },
+            {
+              "text": "とき",
+              "explanation_zh": "表示时间，不适合指代包。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "鞄",
+              "reading": "かばん",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "普通形＋もの"
+          ]
         }
       ]
     }
