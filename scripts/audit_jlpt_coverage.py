@@ -3,7 +3,6 @@
 import argparse
 import csv
 import json
-from collections import Counter
 from pathlib import Path
 from build_jlpt_db import ROOT, LEVELS
 
@@ -17,6 +16,7 @@ def inspect(root=ROOT):
         if not key[0]: problems.append(f"entry {i}: missing expression")
         if key in by_key: problems.append(f"entry {i}: duplicate {key}")
         by_key[key]=item
+        if item.get("variant_of") and item["variant_of"]==key[0]: problems.append(f"entry {i}: variant_of points to itself")
         for field in ("meaning_zh","example_ja","example_zh"):
             if not item.get(field,"").strip(): problems.append(f"entry {i}: missing {field}")
     stats={}
@@ -34,11 +34,14 @@ def inspect(root=ROOT):
                       "coverage_percent":round(100*len(present)/len(keys),2) if keys else 0,
                       "missing":len(keys-present)}
     orphan=set(by_key)-known
+    aliases={(item["variant_of"],item["reading"]) for item in entries if item.get("variant_of")}
     unmatched=[repr(key) for key in sorted(orphan) if not by_key[key].get("variant_of")]
+    invalid_aliases=[repr(key) for key in sorted(aliases-known)]
+    problems.extend("variant target missing from reference: "+key for key in invalid_aliases)
     return {"review_status":data.get("review_status","unknown"),
             "unique_reference_words":len(known),"draft_entries":len(by_key),
             "drafts_matching_reference":len(set(by_key)&known),
-            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,
+            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,"invalid_aliases":invalid_aliases,
             "note":"Draft coverage is not reviewed/approved Chinese translation coverage."}
 
 if __name__=="__main__":
