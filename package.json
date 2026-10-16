@@ -6,7 +6,9 @@
     "fetch": "bash scripts/fetch_sources.sh",
     "build:dict": "python3 scripts/build_dict.py",
     "serve": "python3 -m http.server 8000 -d public",
-    "test": "node scripts/smoke_test.js"
+    "test": "node scripts/smoke_test.js",
+    "build:jlpt-db": "python3 scripts/build_jlpt_db.py",
+    "test:jlpt-db": "python3 scripts/test_jlpt_db.py"
   },
   "repository": {
     "type": "git",
