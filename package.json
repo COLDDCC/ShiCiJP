@@ -10,7 +10,9 @@
     "build:jlpt-db": "python3 scripts/build_jlpt_db.py",
     "test:jlpt-db": "python3 scripts/test_jlpt_db.py",
     "export:jlpt-vocab": "python3 scripts/export_jlpt_vocab.py",
-    "import:jlpt-questions": "python3 scripts/import_jlpt_questions.py"
+    "import:jlpt-questions": "python3 scripts/import_jlpt_questions.py",
+    "build:jlpt-content": "python3 scripts/build_jlpt_content.py",
+    "test:jlpt-content": "python3 scripts/test_jlpt_content.py"
   },
   "repository": {
     "type": "git",
