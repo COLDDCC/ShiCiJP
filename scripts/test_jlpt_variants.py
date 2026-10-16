@@ -13,7 +13,10 @@ with tempfile.TemporaryDirectory() as tmp:
     build(db)
     with sqlite3.connect(db) as con:
         con.execute("PRAGMA foreign_keys=ON")
+        before=con.execute("SELECT COUNT(*) FROM vocabulary").fetchone()[0]
         apply_chinese_entries(con)
+        after=con.execute("SELECT COUNT(*) FROM vocabulary").fetchone()[0]
+        assert before==after,"Editorial drafts must not create vocabulary rows"
         row=con.execute("SELECT meaning_zh FROM vocabulary WHERE expression=? AND reading=?",
                         ("かばん","かばん")).fetchone()
         assert row and row[0]=="包；书包",row
