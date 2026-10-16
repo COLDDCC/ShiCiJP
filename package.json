@@ -12,7 +12,8 @@
     "export:jlpt-vocab": "python3 scripts/export_jlpt_vocab.py",
     "import:jlpt-questions": "python3 scripts/import_jlpt_questions.py",
     "build:jlpt-content": "python3 scripts/build_jlpt_content.py",
-    "test:jlpt-content": "python3 scripts/test_jlpt_content.py"
+    "test:jlpt-content": "python3 scripts/test_jlpt_content.py",
+    "audit:jlpt-coverage": "python3 scripts/audit_jlpt_coverage.py --strict"
   },
   "repository": {
     "type": "git",
