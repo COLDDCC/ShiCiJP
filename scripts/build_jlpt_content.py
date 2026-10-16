@@ -7,6 +7,7 @@ from pathlib import Path
 
 from build_jlpt_db import ROOT, LEVELS, build
 from import_jlpt_questions import import_questions
+from audit_jlpt_coverage import inspect
 
 
 def apply_chinese_entries(con):
@@ -68,6 +69,10 @@ def main():
     if audit["issues"]:
         raise ValueError("Vocabulary editorial issues: "+repr(audit["issues"][:10]))
     print("Chinese draft coverage:", {k:v["coverage_percent"] for k,v in audit["levels"].items()})
+    audit=inspect()
+    if audit["issues"]:
+        raise ValueError("Vocabulary editorial issues: "+repr(audit["issues"][:10]))
+    print("Draft coverage:", {k:v["coverage_percent"] for k,v in audit["levels"].items()})
     build(args.db)
     with sqlite3.connect(str(args.db)) as con:
         con.execute("PRAGMA foreign_keys=ON")
