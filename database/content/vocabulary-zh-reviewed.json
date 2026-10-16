@@ -3690,6 +3690,406 @@
       "example_ja": "毎朝、歯を磨きます。",
       "example_zh": "每天早上刷牙。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "パーティー",
+      "reading": "パーティー",
+      "meaning_zh": "聚会；派对",
+      "example_ja": "土曜日にパーティーがあります。",
+      "example_zh": "星期六有聚会。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "はい",
+      "reading": "はい",
+      "meaning_zh": "是；好的",
+      "example_ja": "はい、分かりました。",
+      "example_zh": "好的，我明白了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "灰皿",
+      "reading": "はいざら",
+      "meaning_zh": "烟灰缸",
+      "example_ja": "灰皿はテーブルの上です。",
+      "example_zh": "烟灰缸在桌上。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "入る",
+      "reading": "はいる",
+      "meaning_zh": "进入；加入",
+      "example_ja": "教室に入ります。",
+      "example_zh": "进入教室。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "葉書",
+      "reading": "はがき",
+      "meaning_zh": "明信片",
+      "example_ja": "友達に葉書を送ります。",
+      "example_zh": "给朋友寄明信片。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "はく",
+      "reading": "はく",
+      "meaning_zh": "穿（裤子、鞋等）",
+      "example_ja": "靴をはきます。",
+      "example_zh": "穿鞋。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "箱",
+      "reading": "はこ",
+      "meaning_zh": "箱子",
+      "example_ja": "箱に本を入れます。",
+      "example_zh": "把书放进箱子里。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "橋",
+      "reading": "はし",
+      "meaning_zh": "桥",
+      "example_ja": "橋を渡ります。",
+      "example_zh": "过桥。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "箸",
+      "reading": "はし",
+      "meaning_zh": "筷子",
+      "example_ja": "箸でご飯を食べます。",
+      "example_zh": "用筷子吃饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "始まる",
+      "reading": "はじまる",
+      "meaning_zh": "开始（自动词）",
+      "example_ja": "授業が始まります。",
+      "example_zh": "开始上课。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "初めて",
+      "reading": "はじめて",
+      "meaning_zh": "第一次；初次",
+      "example_ja": "初めて日本へ行きました。",
+      "example_zh": "第一次去了日本。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "走る",
+      "reading": "はしる",
+      "meaning_zh": "跑；奔跑",
+      "example_ja": "公園で走ります。",
+      "example_zh": "在公园跑步。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "バス",
+      "reading": "バス",
+      "meaning_zh": "公交车；巴士",
+      "example_ja": "バスで駅へ行きます。",
+      "example_zh": "乘公交车去车站。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "バター",
+      "reading": "バター",
+      "meaning_zh": "黄油",
+      "example_ja": "パンにバターを塗ります。",
+      "example_zh": "在面包上涂黄油。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "二十歳",
+      "reading": "はたち",
+      "meaning_zh": "二十岁",
+      "example_ja": "姉は二十歳です。",
+      "example_zh": "姐姐二十岁。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "働く",
+      "reading": "はたらく",
+      "meaning_zh": "工作；劳动",
+      "example_ja": "父は会社で働いています。",
+      "example_zh": "父亲在公司工作。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "八",
+      "reading": "はち",
+      "meaning_zh": "八；数字八",
+      "example_ja": "八時に起きます。",
+      "example_zh": "八点起床。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "二十日",
+      "reading": "はつか",
+      "meaning_zh": "二十号；二十天",
+      "example_ja": "二十日に会いましょう。",
+      "example_zh": "二十号见吧。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "花",
+      "reading": "はな",
+      "meaning_zh": "花",
+      "example_ja": "庭に花があります。",
+      "example_zh": "院子里有花。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "鼻",
+      "reading": "はな",
+      "meaning_zh": "鼻子",
+      "example_ja": "鼻が痛いです。",
+      "example_zh": "鼻子疼。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "話",
+      "reading": "はなし",
+      "meaning_zh": "话；故事",
+      "example_ja": "面白い話を聞きました。",
+      "example_zh": "听了一个有趣的故事。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "話す",
+      "reading": "はなす",
+      "meaning_zh": "说；交谈",
+      "example_ja": "友達と日本語で話します。",
+      "example_zh": "和朋友用日语交谈。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "母",
+      "reading": "はは",
+      "meaning_zh": "母亲（称呼自己的母亲）",
+      "example_ja": "母は料理が上手です。",
+      "example_zh": "我母亲很会做饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "早い",
+      "reading": "はやい",
+      "meaning_zh": "早的",
+      "example_ja": "今日は早く起きました。",
+      "example_zh": "今天起得很早。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "速い",
+      "reading": "はやい",
+      "meaning_zh": "快的；速度快的",
+      "example_ja": "この電車は速いです。",
+      "example_zh": "这趟电车很快。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "春",
+      "reading": "はる",
+      "meaning_zh": "春天",
+      "example_ja": "春は暖かいです。",
+      "example_zh": "春天很暖和。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "貼る",
+      "reading": "はる",
+      "meaning_zh": "贴；粘贴",
+      "example_ja": "壁に写真を貼ります。",
+      "example_zh": "把照片贴在墙上。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "晴れ",
+      "reading": "はれ",
+      "meaning_zh": "晴天",
+      "example_ja": "明日は晴れです。",
+      "example_zh": "明天是晴天。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "晴れる",
+      "reading": "はれる",
+      "meaning_zh": "放晴",
+      "example_ja": "午後には晴れます。",
+      "example_zh": "下午会放晴。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "半",
+      "reading": "はん",
+      "meaning_zh": "一半；半",
+      "example_ja": "今は三時半です。",
+      "example_zh": "现在三点半。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "晩",
+      "reading": "ばん",
+      "meaning_zh": "晚上",
+      "example_ja": "晩に本を読みます。",
+      "example_zh": "晚上看书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "パン",
+      "reading": "パン",
+      "meaning_zh": "面包",
+      "example_ja": "朝、パンを食べます。",
+      "example_zh": "早上吃面包。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ハンカチ",
+      "reading": "ハンカチ",
+      "meaning_zh": "手帕",
+      "example_ja": "ハンカチを持っています。",
+      "example_zh": "带着手帕。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "番号",
+      "reading": "ばんごう",
+      "meaning_zh": "号码；编号",
+      "example_ja": "電話番号を書いてください。",
+      "example_zh": "请写下电话号码。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "晩御飯",
+      "reading": "ばんごはん",
+      "meaning_zh": "晚饭",
+      "example_ja": "家で晩御飯を食べます。",
+      "example_zh": "在家吃晚饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "半分",
+      "reading": "はんぶん",
+      "meaning_zh": "一半",
+      "example_ja": "ケーキを半分食べました。",
+      "example_zh": "吃了半个蛋糕。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "東",
+      "reading": "ひがし",
+      "meaning_zh": "东；东边",
+      "example_ja": "学校は駅の東にあります。",
+      "example_zh": "学校在车站东边。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "引く",
+      "reading": "ひく",
+      "meaning_zh": "拉；拽；查（词典）",
+      "example_ja": "このドアを引いてください。",
+      "example_zh": "请拉这扇门。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "弾く",
+      "reading": "ひく",
+      "meaning_zh": "弹奏（乐器）",
+      "example_ja": "ピアノを弾きます。",
+      "example_zh": "弹钢琴。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "低い",
+      "reading": "ひくい",
+      "meaning_zh": "低的；矮的",
+      "example_ja": "この机は低いです。",
+      "example_zh": "这张桌子很矮。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "飛行機",
+      "reading": "ひこうき",
+      "meaning_zh": "飞机",
+      "example_ja": "飛行機で東京へ行きます。",
+      "example_zh": "乘飞机去东京。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "左",
+      "reading": "ひだり",
+      "meaning_zh": "左；左边",
+      "example_ja": "左に曲がってください。",
+      "example_zh": "请向左转。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "人",
+      "reading": "ひと",
+      "meaning_zh": "人",
+      "example_ja": "あそこに人がいます。",
+      "example_zh": "那里有人。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "一つ",
+      "reading": "ひとつ",
+      "meaning_zh": "一个",
+      "example_ja": "りんごを一つください。",
+      "example_zh": "请给我一个苹果。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "一月",
+      "reading": "ひとつき",
+      "meaning_zh": "一个月",
+      "example_ja": "日本に一月いました。",
+      "example_zh": "在日本待了一个月。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "一人",
+      "reading": "ひとり",
+      "meaning_zh": "一个人",
+      "example_ja": "一人で行きます。",
+      "example_zh": "一个人去。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "暇",
+      "reading": "ひま",
+      "meaning_zh": "空闲；有时间",
+      "example_ja": "明日は暇です。",
+      "example_zh": "明天有空。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "百",
+      "reading": "ひゃく",
+      "meaning_zh": "一百",
+      "example_ja": "この本は百円です。",
+      "example_zh": "这本书一百日元。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "病院",
+      "reading": "びょういん",
+      "meaning_zh": "医院",
+      "example_ja": "病院へ行きます。",
+      "example_zh": "去医院。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "病気",
+      "reading": "びょうき",
+      "meaning_zh": "生病；疾病",
+      "example_ja": "病気で学校を休みました。",
+      "example_zh": "因为生病没去上学。",
+      "level_hint": "N5"
     }
   ]
 }
