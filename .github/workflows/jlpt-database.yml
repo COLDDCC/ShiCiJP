@@ -23,6 +23,7 @@ on:
       - 'scripts/build_jlpt_content.py'
       - 'scripts/audit_jlpt_coverage.py'
       - 'scripts/sync_jlpt_drafts.py'
+      - 'scripts/test_jlpt_variants.py'
       - 'scripts/import_jlpt_questions.py'
       - 'scripts/test_jlpt_db.py'
       - 'scripts/test_jlpt_content.py'
