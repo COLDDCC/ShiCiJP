@@ -31,6 +31,11 @@ def publish(db_path: Path, destination: Path) -> None:
     with sqlite3.connect(str(db_path)) as con:
         con.execute("PRAGMA foreign_keys=ON")
         examples={ (x["expression"],x["reading"]):x for x in json.loads((ROOT/"database/content/vocabulary-zh-reviewed.json").read_text(encoding="utf-8"))["entries"] }
+        for item in list(examples.values()):
+            if item.get("variant_of"):
+                target=(item["variant_of"],item["reading"])
+                if target not in examples:
+                    examples[target]=item
         for level in LEVELS:
             rows = con.execute("""
                 SELECT v.id,v.expression,v.reading,v.meaning_en,v.meaning_zh,
@@ -69,10 +74,6 @@ def main():
     if audit["issues"]:
         raise ValueError("Vocabulary editorial issues: "+repr(audit["issues"][:10]))
     print("Chinese draft coverage:", {k:v["coverage_percent"] for k,v in audit["levels"].items()})
-    audit=inspect()
-    if audit["issues"]:
-        raise ValueError("Vocabulary editorial issues: "+repr(audit["issues"][:10]))
-    print("Draft coverage:", {k:v["coverage_percent"] for k,v in audit["levels"].items()})
     build(args.db)
     with sqlite3.connect(str(args.db)) as con:
         con.execute("PRAGMA foreign_keys=ON")
