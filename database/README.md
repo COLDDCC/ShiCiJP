@@ -43,3 +43,32 @@ WHERE vl.level='N5' ORDER BY v.expression LIMIT 20;
 SELECT * FROM official_vocabulary_frequency WHERE level='N1'
 ORDER BY question_count DESC LIMIT 20;
 ```
+
+## Unified content build (recommended)
+
+Run `npm run build:jlpt-content` to rebuild the local SQLite database from the
+five tracked community vocabulary CSV files **and** the reviewed original practice
+questions, then publish read-only JSON for each level under
+`public/jlpt/vocabulary/data/{n1,n2,n3,n4,n5}.json`.
+
+The exported `original_practice_question_count` measures only the number of
+**our own** questions referencing a word at that level. It is **not** a count
+of official JLPT appearances. The exporter explicitly sets
+`official_exam_appearances_available: false`. No official frequency should
+be displayed until verified exam evidence is imported with rights review.
+
+The existing website vocabulary page still reads the tracked CSV files;
+this JSON export is a database-backed integration format for the next stage.
+Do not claim the static website is already reading the exported JSON.
+
+Run `npm run test:jlpt-content` before publishing updated questions.
+
+### Completion criteria
+
+- N1–N5 vocabulary source and level provenance retained, with separately
+  reviewed Chinese definitions and examples; never invent missing meanings.
+- Every published question has a source, rights status, answer, full option
+  explanations and links to vocabulary/grammar.
+- Grammar explanations and examples are reviewed, not empty placeholders.
+- Official frequency and original-practice frequency remain separate.
+- Automated database integrity tests and real browser testing pass before launch.
