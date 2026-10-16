@@ -53,3 +53,10 @@ jobs:
           name: jlpt-coverage-report
           path: /tmp/jlpt-coverage.json
           if-no-files-found: warn
+      - name: Publish JLPT export samples
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jlpt-vocabulary-json
+          path: /tmp/shicijp-jlpt-export/n*.json
+          if-no-files-found: error
