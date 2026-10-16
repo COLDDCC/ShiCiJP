@@ -4090,6 +4090,406 @@
       "example_ja": "病気で学校を休みました。",
       "example_zh": "因为生病没去上学。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "平仮名",
+      "reading": "ひらがな",
+      "meaning_zh": "平假名",
+      "example_ja": "平仮名を練習します。",
+      "example_zh": "练习平假名。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "昼",
+      "reading": "ひる",
+      "meaning_zh": "中午；白天",
+      "example_ja": "昼に友達と会います。",
+      "example_zh": "中午和朋友见面。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "昼御飯",
+      "reading": "ひるごはん",
+      "meaning_zh": "午饭",
+      "example_ja": "昼御飯を食べます。",
+      "example_zh": "吃午饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "広い",
+      "reading": "ひろい",
+      "meaning_zh": "宽敞的；广阔的",
+      "example_ja": "この部屋は広いです。",
+      "example_zh": "这个房间很宽敞。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "フィルム",
+      "reading": "フィルム",
+      "meaning_zh": "胶卷；薄膜",
+      "example_ja": "カメラにフィルムを入れます。",
+      "example_zh": "把胶卷装进相机。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "封筒",
+      "reading": "ふうとう",
+      "meaning_zh": "信封",
+      "example_ja": "手紙を封筒に入れます。",
+      "example_zh": "把信放进信封。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "プール",
+      "reading": "プール",
+      "meaning_zh": "游泳池",
+      "example_ja": "夏はプールで泳ぎます。",
+      "example_zh": "夏天在游泳池游泳。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "フォーク",
+      "reading": "フォーク",
+      "meaning_zh": "叉子",
+      "example_ja": "フォークでケーキを食べます。",
+      "example_zh": "用叉子吃蛋糕。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "吹く",
+      "reading": "ふく",
+      "meaning_zh": "吹；刮（风）",
+      "example_ja": "風が強く吹いています。",
+      "example_zh": "风刮得很大。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "服",
+      "reading": "ふく",
+      "meaning_zh": "衣服",
+      "example_ja": "新しい服を買いました。",
+      "example_zh": "买了新衣服。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "二つ",
+      "reading": "ふたつ",
+      "meaning_zh": "两个",
+      "example_ja": "りんごを二つ買いました。",
+      "example_zh": "买了两个苹果。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "豚肉",
+      "reading": "ぶたにく",
+      "meaning_zh": "猪肉",
+      "example_ja": "豚肉で料理を作ります。",
+      "example_zh": "用猪肉做菜。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "二人",
+      "reading": "ふたり",
+      "meaning_zh": "两个人",
+      "example_ja": "二人で映画を見ました。",
+      "example_zh": "两个人一起看了电影。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "二日",
+      "reading": "ふつか",
+      "meaning_zh": "二号；两天",
+      "example_ja": "二日に出発します。",
+      "example_zh": "二号出发。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "太い",
+      "reading": "ふとい",
+      "meaning_zh": "粗的；胖的",
+      "example_ja": "この木は太いです。",
+      "example_zh": "这棵树很粗。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "冬",
+      "reading": "ふゆ",
+      "meaning_zh": "冬天",
+      "example_ja": "冬は寒いです。",
+      "example_zh": "冬天很冷。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "降る",
+      "reading": "ふる",
+      "meaning_zh": "下（雨、雪）",
+      "example_ja": "雨が降っています。",
+      "example_zh": "正在下雨。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "古い",
+      "reading": "ふるい",
+      "meaning_zh": "旧的；古老的",
+      "example_ja": "この建物は古いです。",
+      "example_zh": "这栋建筑很旧。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "文章",
+      "reading": "ぶんしょう",
+      "meaning_zh": "文章；句子",
+      "example_ja": "短い文章を書きます。",
+      "example_zh": "写一段短文。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ページ",
+      "reading": "ページ",
+      "meaning_zh": "页；页面",
+      "example_ja": "十ページを読んでください。",
+      "example_zh": "请读第十页。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "下手",
+      "reading": "へた",
+      "meaning_zh": "不擅长；笨拙",
+      "example_ja": "私は歌が下手です。",
+      "example_zh": "我不擅长唱歌。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ベッド",
+      "reading": "ベッド",
+      "meaning_zh": "床",
+      "example_ja": "ベッドで寝ます。",
+      "example_zh": "在床上睡觉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ペット",
+      "reading": "ペット",
+      "meaning_zh": "宠物",
+      "example_ja": "家でペットを飼っています。",
+      "example_zh": "家里养着宠物。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "辺",
+      "reading": "へん",
+      "meaning_zh": "附近；一带",
+      "example_ja": "この辺に駅がありますか。",
+      "example_zh": "这附近有车站吗？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ペン",
+      "reading": "ペン",
+      "meaning_zh": "笔",
+      "example_ja": "ペンで名前を書きます。",
+      "example_zh": "用笔写名字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "便利",
+      "reading": "べんり",
+      "meaning_zh": "方便的；便利的",
+      "example_ja": "この駅は便利です。",
+      "example_zh": "这个车站很方便。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "帽子",
+      "reading": "ぼうし",
+      "meaning_zh": "帽子",
+      "example_ja": "帽子をかぶります。",
+      "example_zh": "戴帽子。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ボールペン",
+      "reading": "ボールペン",
+      "meaning_zh": "圆珠笔",
+      "example_ja": "ボールペンで書いてください。",
+      "example_zh": "请用圆珠笔写。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "外",
+      "reading": "ほか",
+      "meaning_zh": "其他；别的",
+      "example_ja": "外に質問はありますか。",
+      "example_zh": "还有其他问题吗？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ポケット",
+      "reading": "ポケット",
+      "meaning_zh": "口袋",
+      "example_ja": "鍵はポケットにあります。",
+      "example_zh": "钥匙在口袋里。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "欲しい",
+      "reading": "ほしい",
+      "meaning_zh": "想要的",
+      "example_ja": "新しいかばんが欲しいです。",
+      "example_zh": "我想要一个新包。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ポスト",
+      "reading": "ポスト",
+      "meaning_zh": "邮筒；信箱",
+      "example_ja": "手紙をポストに入れます。",
+      "example_zh": "把信投进邮筒。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "細い",
+      "reading": "ほそい",
+      "meaning_zh": "细的；纤细的",
+      "example_ja": "この道は細いです。",
+      "example_zh": "这条路很窄。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ボタン",
+      "reading": "ボタン",
+      "meaning_zh": "按钮；纽扣",
+      "example_ja": "ボタンを押してください。",
+      "example_zh": "请按按钮。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ホテル",
+      "reading": "ホテル",
+      "meaning_zh": "酒店；旅馆",
+      "example_ja": "駅の近くのホテルに泊まります。",
+      "example_zh": "住在车站附近的酒店。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "本棚",
+      "reading": "ほんだな",
+      "meaning_zh": "书架",
+      "example_ja": "本棚に本を並べます。",
+      "example_zh": "把书摆到书架上。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "本当",
+      "reading": "ほんとう",
+      "meaning_zh": "真的；事实",
+      "example_ja": "それは本当ですか。",
+      "example_zh": "那是真的吗？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "毎朝",
+      "reading": "まいあさ",
+      "meaning_zh": "每天早上",
+      "example_ja": "毎朝七時に起きます。",
+      "example_zh": "每天早上七点起床。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "毎週",
+      "reading": "まいしゅう",
+      "meaning_zh": "每周",
+      "example_ja": "毎週日本語を勉強します。",
+      "example_zh": "每周学习日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "毎日",
+      "reading": "まいにち",
+      "meaning_zh": "每天",
+      "example_ja": "毎日散歩します。",
+      "example_zh": "每天散步。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "毎晩",
+      "reading": "まいばん",
+      "meaning_zh": "每天晚上",
+      "example_ja": "毎晩本を読みます。",
+      "example_zh": "每天晚上看书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "前",
+      "reading": "まえ",
+      "meaning_zh": "前面；以前",
+      "example_ja": "駅の前で待ちます。",
+      "example_zh": "在车站前面等。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "曲る",
+      "reading": "まがる",
+      "meaning_zh": "拐弯；转弯",
+      "example_ja": "次の角を右に曲がります。",
+      "example_zh": "在下一个拐角右转。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "まずい",
+      "reading": "まずい",
+      "meaning_zh": "难吃的；糟糕的",
+      "example_ja": "この料理はまずいです。",
+      "example_zh": "这道菜不好吃。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "また",
+      "reading": "また",
+      "meaning_zh": "再；又；另外",
+      "example_ja": "また明日会いましょう。",
+      "example_zh": "明天再见。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "まだ",
+      "reading": "まだ",
+      "meaning_zh": "还；尚未",
+      "example_ja": "宿題はまだ終わっていません。",
+      "example_zh": "作业还没有做完。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "町",
+      "reading": "まち",
+      "meaning_zh": "城镇；街区",
+      "example_ja": "この町は静かです。",
+      "example_zh": "这个城镇很安静。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "待つ",
+      "reading": "まつ",
+      "meaning_zh": "等待",
+      "example_ja": "ここで待ってください。",
+      "example_zh": "请在这里等。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "まっすぐ",
+      "reading": "まっすぐ",
+      "meaning_zh": "笔直；一直",
+      "example_ja": "この道をまっすぐ行ってください。",
+      "example_zh": "请沿这条路一直走。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "マッチ",
+      "reading": "マッチ",
+      "meaning_zh": "火柴；比赛",
+      "example_ja": "マッチで火をつけます。",
+      "example_zh": "用火柴点火。",
+      "level_hint": "N5"
     }
   ]
 }
