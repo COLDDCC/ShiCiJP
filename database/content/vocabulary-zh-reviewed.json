@@ -5746,6 +5746,14 @@
       "example_ja": "花屋で花を買います。",
       "example_zh": "在花店买花。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "練習",
+      "reading": "れんしゅう (する)",
+      "meaning_zh": "练习；训练",
+      "example_ja": "毎日日本語を練習します。",
+      "example_zh": "每天练习日语。",
+      "level_hint": "N5"
     }
   ]
 }
