@@ -35,12 +35,21 @@ def inspect(root=ROOT):
                       "missing":len(keys-present)}
     orphan=set(by_key)-known
     aliases={(item["variant_of"],item["reading"]) for item in entries if item.get("variant_of")}
+    targets={}
+    for i,item in enumerate(entries,1):
+        target=(item.get("variant_of") or item.get("expression"),item.get("reading"))
+        if target in known:
+            previous=targets.get(target)
+            if previous is not None:
+                problems.append(f"entry {i}: duplicate reference target {target} (also entry {previous})")
+            else:
+                targets[target]=i
     unmatched=[repr(key) for key in sorted(orphan) if not by_key[key].get("variant_of")]
     invalid_aliases=[repr(key) for key in sorted(aliases-known)]
     problems.extend("variant target missing from reference: "+key for key in invalid_aliases)
     return {"review_status":data.get("review_status","unknown"),
             "unique_reference_words":len(known),"draft_entries":len(by_key),
-            "drafts_matching_reference":len(set(by_key)&known),
+            "drafts_matching_reference":len(targets),
             "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,"invalid_aliases":invalid_aliases,
             "note":"Draft coverage is not reviewed/approved Chinese translation coverage."}
 
