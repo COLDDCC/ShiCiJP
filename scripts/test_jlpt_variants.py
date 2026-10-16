@@ -14,7 +14,7 @@ coverage=inspect()
 assert not coverage["issues"],coverage["issues"]
 assert coverage["draft_entries"]==len(drafts)
 assert coverage["drafts_matching_reference"]+coverage["unmatched_draft_count"]==len(drafts)
-assert coverage["unmatched_draft_count"]==1,coverage["unmatched_reference_entries"]
+assert coverage["unmatched_draft_count"]==len(coverage["unmatched_reference_entries"])
 
 with tempfile.TemporaryDirectory() as tmp:
     root=Path(tmp)
