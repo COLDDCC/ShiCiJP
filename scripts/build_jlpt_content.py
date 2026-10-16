@@ -64,6 +64,10 @@ def main():
     parser.add_argument("--db",type=Path,default=ROOT/"database"/"jlpt.sqlite")
     parser.add_argument("--output",type=Path,default=ROOT/"public"/"jlpt"/"vocabulary"/"data")
     args=parser.parse_args()
+    audit=inspect()
+    if audit["issues"]:
+        raise ValueError("Vocabulary editorial issues: "+repr(audit["issues"][:10]))
+    print("Chinese draft coverage:", {k:v["coverage_percent"] for k,v in audit["levels"].items()})
     build(args.db)
     with sqlite3.connect(str(args.db)) as con:
         con.execute("PRAGMA foreign_keys=ON")
