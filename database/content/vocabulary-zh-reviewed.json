@@ -3290,6 +3290,406 @@
       "example_ja": "年を取りました。",
       "example_zh": "上了年纪。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "図書館",
+      "reading": "としょかん",
+      "meaning_zh": "图书馆",
+      "example_ja": "図書館で本を借ります。",
+      "example_zh": "在图书馆借书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "どちら",
+      "reading": "どちら",
+      "meaning_zh": "哪边；哪位（礼貌说法）",
+      "example_ja": "駅はどちらですか。",
+      "example_zh": "车站在哪边？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "どっち",
+      "reading": "どっち",
+      "meaning_zh": "哪边（口语）",
+      "example_ja": "どっちへ行きますか。",
+      "example_zh": "往哪边走？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "とても",
+      "reading": "とても",
+      "meaning_zh": "非常；很",
+      "example_ja": "この本はとても面白いです。",
+      "example_zh": "这本书非常有趣。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "どなた",
+      "reading": "どなた",
+      "meaning_zh": "哪位（尊敬说法）",
+      "example_ja": "どなたですか。",
+      "example_zh": "请问是哪位？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "隣",
+      "reading": "となり",
+      "meaning_zh": "旁边；隔壁",
+      "example_ja": "隣に友達が座っています。",
+      "example_zh": "朋友坐在旁边。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "どの",
+      "reading": "どの",
+      "meaning_zh": "哪个（修饰名词）",
+      "example_ja": "どの本が好きですか。",
+      "example_zh": "你喜欢哪本书？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "飛ぶ",
+      "reading": "とぶ",
+      "meaning_zh": "飞；飞行",
+      "example_ja": "鳥が空を飛んでいます。",
+      "example_zh": "鸟正在天上飞。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "止まる",
+      "reading": "とまる",
+      "meaning_zh": "停止；停下",
+      "example_ja": "バスが止まりました。",
+      "example_zh": "公交车停下来了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "土曜日",
+      "reading": "どようび",
+      "meaning_zh": "星期六",
+      "example_ja": "土曜日は休みです。",
+      "example_zh": "星期六休息。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "鳥",
+      "reading": "とり",
+      "meaning_zh": "鸟",
+      "example_ja": "庭に鳥がいます。",
+      "example_zh": "院子里有鸟。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "鶏肉",
+      "reading": "とりにく",
+      "meaning_zh": "鸡肉",
+      "example_ja": "夕飯に鶏肉を食べます。",
+      "example_zh": "晚饭吃鸡肉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "取る",
+      "reading": "とる",
+      "meaning_zh": "拿；取；取得",
+      "example_ja": "棚から本を取ります。",
+      "example_zh": "从架子上拿书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "撮る",
+      "reading": "とる",
+      "meaning_zh": "拍摄；拍照",
+      "example_ja": "写真を撮ります。",
+      "example_zh": "拍照片。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "どれ",
+      "reading": "どれ",
+      "meaning_zh": "哪个",
+      "example_ja": "どれがあなたのかばんですか。",
+      "example_zh": "哪个是你的包？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "どんな",
+      "reading": "どんな",
+      "meaning_zh": "什么样的",
+      "example_ja": "どんな音楽が好きですか。",
+      "example_zh": "你喜欢什么样的音乐？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ない",
+      "reading": "ない",
+      "meaning_zh": "没有；不存在",
+      "example_ja": "今日は時間がないです。",
+      "example_zh": "今天没有时间。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ナイフ",
+      "reading": "ナイフ",
+      "meaning_zh": "刀；餐刀",
+      "example_ja": "ナイフでパンを切ります。",
+      "example_zh": "用刀切面包。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "中",
+      "reading": "なか",
+      "meaning_zh": "里面；内部",
+      "example_ja": "箱の中に本があります。",
+      "example_zh": "箱子里有书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "長い",
+      "reading": "ながい",
+      "meaning_zh": "长的；时间久的",
+      "example_ja": "この道は長いです。",
+      "example_zh": "这条路很长。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "鳴く",
+      "reading": "なく",
+      "meaning_zh": "叫；鸣叫（动物）",
+      "example_ja": "猫が鳴いています。",
+      "example_zh": "猫在叫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "無くす",
+      "reading": "なくす",
+      "meaning_zh": "弄丢；丢失",
+      "example_ja": "鍵を無くしました。",
+      "example_zh": "把钥匙弄丢了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "なぜ",
+      "reading": "なぜ",
+      "meaning_zh": "为什么",
+      "example_ja": "なぜ学校を休みましたか。",
+      "example_zh": "为什么没去上学？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "夏",
+      "reading": "なつ",
+      "meaning_zh": "夏天",
+      "example_ja": "夏は暑いです。",
+      "example_zh": "夏天很热。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "夏休み",
+      "reading": "なつやすみ",
+      "meaning_zh": "暑假",
+      "example_ja": "夏休みに旅行します。",
+      "example_zh": "暑假去旅行。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "七つ",
+      "reading": "ななつ",
+      "meaning_zh": "七个",
+      "example_ja": "みかんを七つ買いました。",
+      "example_zh": "买了七个橘子。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "七日",
+      "reading": "なのか",
+      "meaning_zh": "七号；七天",
+      "example_ja": "七日に出発します。",
+      "example_zh": "七号出发。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "名前",
+      "reading": "なまえ",
+      "meaning_zh": "名字；姓名",
+      "example_ja": "名前を書いてください。",
+      "example_zh": "请写下名字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "習う",
+      "reading": "ならう",
+      "meaning_zh": "学习（接受指导）",
+      "example_ja": "先生に日本語を習います。",
+      "example_zh": "跟老师学日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "並ぶ",
+      "reading": "ならぶ",
+      "meaning_zh": "排队；排列（自动词）",
+      "example_ja": "店の前に人が並んでいます。",
+      "example_zh": "店门前有人在排队。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "並べる",
+      "reading": "ならべる",
+      "meaning_zh": "摆放；排列（他动词）",
+      "example_ja": "机の上に本を並べます。",
+      "example_zh": "把书摆在桌子上。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "なる",
+      "reading": "なる",
+      "meaning_zh": "变成；成为",
+      "example_ja": "春になると暖かくなります。",
+      "example_zh": "到了春天天气就暖和了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "二",
+      "reading": "に",
+      "meaning_zh": "二；数字二",
+      "example_ja": "二から数えます。",
+      "example_zh": "从二开始数。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "にぎやか",
+      "reading": "にぎやか",
+      "meaning_zh": "热闹的",
+      "example_ja": "この町はにぎやかです。",
+      "example_zh": "这个城镇很热闹。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "肉",
+      "reading": "にく",
+      "meaning_zh": "肉",
+      "example_ja": "肉を食べます。",
+      "example_zh": "吃肉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "西",
+      "reading": "にし",
+      "meaning_zh": "西；西边",
+      "example_ja": "駅は町の西にあります。",
+      "example_zh": "车站在城镇的西边。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "荷物",
+      "reading": "にもつ",
+      "meaning_zh": "行李；包裹",
+      "example_ja": "荷物を持ちます。",
+      "example_zh": "拿行李。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ニュース",
+      "reading": "ニュース",
+      "meaning_zh": "新闻",
+      "example_ja": "朝、ニュースを見ます。",
+      "example_zh": "早上看新闻。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "庭",
+      "reading": "にわ",
+      "meaning_zh": "院子；庭院",
+      "example_ja": "庭に花が咲いています。",
+      "example_zh": "院子里开着花。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "脱ぐ",
+      "reading": "ぬぐ",
+      "meaning_zh": "脱（衣服、鞋）",
+      "example_ja": "靴を脱いでください。",
+      "example_zh": "请脱鞋。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "温い",
+      "reading": "ぬるい",
+      "meaning_zh": "温的；不够热的",
+      "example_ja": "このお茶は温いです。",
+      "example_zh": "这杯茶不够热。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ネクタイ",
+      "reading": "ネクタイ",
+      "meaning_zh": "领带",
+      "example_ja": "ネクタイを締めます。",
+      "example_zh": "系领带。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "猫",
+      "reading": "ねこ",
+      "meaning_zh": "猫",
+      "example_ja": "猫が寝ています。",
+      "example_zh": "猫正在睡觉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "寝る",
+      "reading": "ねる",
+      "meaning_zh": "睡觉；就寝",
+      "example_ja": "毎晩十一時に寝ます。",
+      "example_zh": "每天晚上十一点睡觉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ノート",
+      "reading": "ノート",
+      "meaning_zh": "笔记本",
+      "example_ja": "ノートに名前を書きます。",
+      "example_zh": "在笔记本上写名字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "登る",
+      "reading": "のぼる",
+      "meaning_zh": "攀登；登上",
+      "example_ja": "山に登ります。",
+      "example_zh": "爬山。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "飲み物",
+      "reading": "のみもの",
+      "meaning_zh": "饮料",
+      "example_ja": "冷たい飲み物が欲しいです。",
+      "example_zh": "想喝冷饮。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "飲む",
+      "reading": "のむ",
+      "meaning_zh": "喝；服用",
+      "example_ja": "水を飲みます。",
+      "example_zh": "喝水。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "乗る",
+      "reading": "のる",
+      "meaning_zh": "乘坐；搭乘",
+      "example_ja": "電車に乗ります。",
+      "example_zh": "乘电车。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "歯",
+      "reading": "は",
+      "meaning_zh": "牙齿",
+      "example_ja": "毎朝、歯を磨きます。",
+      "example_zh": "每天早上刷牙。",
+      "level_hint": "N5"
     }
   ]
 }
