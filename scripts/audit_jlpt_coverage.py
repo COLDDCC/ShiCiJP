@@ -46,11 +46,12 @@ def inspect(root=ROOT):
                 targets[target]=i
     unmatched=[repr(key) for key in sorted(orphan) if not by_key[key].get("variant_of")]
     invalid_aliases=[repr(key) for key in sorted(aliases-known)]
+    unmatched_details=[{"expression":key[0],"reading":key[1],"level_hint":by_key[key].get("level_hint"),"reason":"not_in_reference"} for key in sorted(orphan) if not by_key[key].get("variant_of")]
     problems.extend("variant target missing from reference: "+key for key in invalid_aliases)
     return {"review_status":data.get("review_status","unknown"),
             "unique_reference_words":len(known),"draft_entries":len(by_key),
             "drafts_matching_reference":len(targets),
-            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,"unmatched_draft_count":len(unmatched),"invalid_aliases":invalid_aliases,
+            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,"unmatched_draft_details":unmatched_details,"unmatched_draft_count":len(unmatched),"invalid_aliases":invalid_aliases,
             "note":"Draft coverage is not reviewed/approved Chinese translation coverage."}
 
 if __name__=="__main__":
