@@ -1,0 +1,90 @@
+{
+  "source": {
+    "id": "shicijp-original-practice",
+    "title": "ShiCiJP 原创示范练习",
+    "source_type": "original",
+    "permission_status": "owned",
+    "license": "CC BY 4.0",
+    "url": "https://shicijp.com/jlpt/"
+  },
+  "exams": [
+    {
+      "id": "shicijp-n5-demo-01",
+      "level": "N5",
+      "title": "N5 原创语法示范练习 01",
+      "section": "grammar",
+      "questions": [
+        {
+          "id": "shicijp-n5-demo-01-q1",
+          "number": 1,
+          "stem": "わたしは 毎朝 七時（　）起きます。",
+          "correct_option": 2,
+          "explanation_zh": "具体的动作发生时间通常使用助词「に」。这里的「七時に起きます」表示七点起床。",
+          "options": [
+            {
+              "text": "を",
+              "explanation_zh": "「を」主要标记动作的宾语，不能标记这里的起床时间。"
+            },
+            {
+              "text": "に",
+              "explanation_zh": "「に」标记具体时间，是正确答案。"
+            },
+            {
+              "text": "で",
+              "explanation_zh": "「で」常标记动作场所或手段，不适合这里的时间表达。"
+            },
+            {
+              "text": "が",
+              "explanation_zh": "「が」通常标记主语，不适合这里的时间表达。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "朝",
+              "reading": "あさ",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "に"
+          ]
+        },
+        {
+          "id": "shicijp-n5-demo-01-q2",
+          "number": 2,
+          "stem": "きのう 図書館で 本を（　）。",
+          "correct_option": 3,
+          "explanation_zh": "「きのう」表示昨天，句子叙述过去发生的事情。「読みました」是「読む」的礼貌过去式。",
+          "options": [
+            {
+              "text": "読みます",
+              "explanation_zh": "礼貌非过去式，不能自然表达这里已经发生的动作。"
+            },
+            {
+              "text": "読む",
+              "explanation_zh": "普通形非过去式，与此句的礼貌体风格不一致。"
+            },
+            {
+              "text": "読みました",
+              "explanation_zh": "礼貌过去式，符合「きのう」的时间语境。"
+            },
+            {
+              "text": "読んで",
+              "explanation_zh": "て形，单独作为句末谓语不完整。"
+            }
+          ],
+          "vocabulary": [
+            {
+              "expression": "本",
+              "reading": "ほん",
+              "occurrence_count": 1
+            }
+          ],
+          "grammar": [
+            "ます"
+          ]
+        }
+      ]
+    }
+  ]
+}
