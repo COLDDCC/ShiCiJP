@@ -970,6 +970,350 @@
       "example_ja": "漢字を勉強します。",
       "example_zh": "学习汉字。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "木",
+      "reading": "き",
+      "meaning_zh": "树；木头",
+      "example_ja": "庭に木があります。",
+      "example_zh": "院子里有一棵树。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "黄色",
+      "reading": "きいろ",
+      "meaning_zh": "黄色",
+      "example_ja": "黄色が好きです。",
+      "example_zh": "我喜欢黄色。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "黄色い",
+      "reading": "きいろい",
+      "meaning_zh": "黄色的",
+      "example_ja": "黄色い花が咲いています。",
+      "example_zh": "黄色的花开了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "消える",
+      "reading": "きえる",
+      "meaning_zh": "消失；熄灭",
+      "example_ja": "電気が消えました。",
+      "example_zh": "灯熄灭了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "聞く",
+      "reading": "きく",
+      "meaning_zh": "听；询问",
+      "example_ja": "音楽を聞きます。",
+      "example_zh": "听音乐。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "北",
+      "reading": "きた",
+      "meaning_zh": "北；北方",
+      "example_ja": "駅は町の北にあります。",
+      "example_zh": "车站在城镇的北边。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ギター",
+      "reading": "ギター",
+      "meaning_zh": "吉他",
+      "example_ja": "ギターを弾きます。",
+      "example_zh": "弹吉他。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "汚い",
+      "reading": "きたない",
+      "meaning_zh": "脏的",
+      "example_ja": "この部屋は汚いです。",
+      "example_zh": "这个房间很脏。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "喫茶店",
+      "reading": "きっさてん",
+      "meaning_zh": "咖啡馆；茶馆",
+      "example_ja": "喫茶店でコーヒーを飲みます。",
+      "example_zh": "在咖啡馆喝咖啡。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "切手",
+      "reading": "きって",
+      "meaning_zh": "邮票",
+      "example_ja": "郵便局で切手を買います。",
+      "example_zh": "在邮局买邮票。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "切符",
+      "reading": "きっぷ",
+      "meaning_zh": "车票；票",
+      "example_ja": "駅で切符を買いました。",
+      "example_zh": "在车站买了票。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "昨日",
+      "reading": "きのう",
+      "meaning_zh": "昨天",
+      "example_ja": "昨日、映画を見ました。",
+      "example_zh": "昨天看了电影。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "牛肉",
+      "reading": "ぎゅうにく",
+      "meaning_zh": "牛肉",
+      "example_ja": "牛肉を食べます。",
+      "example_zh": "吃牛肉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "meaning_zh": "牛奶",
+      "example_ja": "朝、牛乳を飲みます。",
+      "example_zh": "早上喝牛奶。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "今日",
+      "reading": "きょう",
+      "meaning_zh": "今天",
+      "example_ja": "今日は月曜日です。",
+      "example_zh": "今天是星期一。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "兄弟",
+      "reading": "きょうだい",
+      "meaning_zh": "兄弟姐妹",
+      "example_ja": "兄弟が二人います。",
+      "example_zh": "我有两个兄弟姐妹。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "去年",
+      "reading": "きょねん",
+      "meaning_zh": "去年",
+      "example_ja": "去年、日本に行きました。",
+      "example_zh": "去年去了日本。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "嫌い",
+      "reading": "きらい",
+      "meaning_zh": "讨厌的；不喜欢的",
+      "example_ja": "私は納豆が嫌いです。",
+      "example_zh": "我不喜欢纳豆。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "切る",
+      "reading": "きる",
+      "meaning_zh": "切；剪",
+      "example_ja": "紙を切ります。",
+      "example_zh": "剪纸。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "着る",
+      "reading": "きる",
+      "meaning_zh": "穿（上衣等）",
+      "example_ja": "シャツを着ます。",
+      "example_zh": "穿衬衫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "綺麗",
+      "reading": "きれい",
+      "meaning_zh": "漂亮的；干净的",
+      "example_ja": "この公園は綺麗です。",
+      "example_zh": "这个公园很漂亮。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "銀行",
+      "reading": "ぎんこう",
+      "meaning_zh": "银行",
+      "example_ja": "銀行へ行きます。",
+      "example_zh": "去银行。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "金曜日",
+      "reading": "きんようび",
+      "meaning_zh": "星期五",
+      "example_ja": "金曜日に会いましょう。",
+      "example_zh": "星期五见吧。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "薬",
+      "reading": "くすり",
+      "meaning_zh": "药；药品",
+      "example_ja": "食後に薬を飲みます。",
+      "example_zh": "饭后吃药。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "果物",
+      "reading": "くだもの",
+      "meaning_zh": "水果",
+      "example_ja": "果物を買います。",
+      "example_zh": "买水果。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "口",
+      "reading": "くち",
+      "meaning_zh": "嘴；口",
+      "example_ja": "口を開けてください。",
+      "example_zh": "请张开嘴。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "靴",
+      "reading": "くつ",
+      "meaning_zh": "鞋",
+      "example_ja": "新しい靴を買いました。",
+      "example_zh": "买了新鞋。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "靴下",
+      "reading": "くつした",
+      "meaning_zh": "袜子",
+      "example_ja": "靴下をはきます。",
+      "example_zh": "穿袜子。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "国",
+      "reading": "くに",
+      "meaning_zh": "国家；故乡",
+      "example_ja": "あなたの国はどこですか。",
+      "example_zh": "你来自哪个国家？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "曇り",
+      "reading": "くもり",
+      "meaning_zh": "阴天；多云",
+      "example_ja": "明日は曇りです。",
+      "example_zh": "明天多云。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "曇る",
+      "reading": "くもる",
+      "meaning_zh": "变阴；阴天",
+      "example_ja": "午後から空が曇ります。",
+      "example_zh": "下午天空会转阴。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "暗い",
+      "reading": "くらい",
+      "meaning_zh": "昏暗的；阴暗的",
+      "example_ja": "この道は暗いです。",
+      "example_zh": "这条路很暗。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "クラス",
+      "reading": "クラス",
+      "meaning_zh": "班级；课堂",
+      "example_ja": "同じクラスです。",
+      "example_zh": "我们在同一个班。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "グラム",
+      "reading": "グラム",
+      "meaning_zh": "克",
+      "example_ja": "砂糖を百グラム買います。",
+      "example_zh": "买一百克糖。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "来る",
+      "reading": "くる",
+      "meaning_zh": "来",
+      "example_ja": "友達が家に来ます。",
+      "example_zh": "朋友来我家。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "車",
+      "reading": "くるま",
+      "meaning_zh": "汽车；车辆",
+      "example_ja": "車で学校へ行きます。",
+      "example_zh": "坐车去学校。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "黒",
+      "reading": "くろ",
+      "meaning_zh": "黑色",
+      "example_ja": "黒が好きです。",
+      "example_zh": "我喜欢黑色。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "黒い",
+      "reading": "くろい",
+      "meaning_zh": "黑色的",
+      "example_ja": "黒い猫がいます。",
+      "example_zh": "有一只黑猫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "警官",
+      "reading": "けいかん",
+      "meaning_zh": "警察；警官",
+      "example_ja": "警官に道を聞きました。",
+      "example_zh": "向警察问了路。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "今朝",
+      "reading": "けさ",
+      "meaning_zh": "今天早上",
+      "example_ja": "今朝は早く起きました。",
+      "example_zh": "今天早上起得很早。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "消す",
+      "reading": "けす",
+      "meaning_zh": "关掉；擦掉",
+      "example_ja": "電気を消してください。",
+      "example_zh": "请关灯。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "結構",
+      "reading": "けっこう",
+      "meaning_zh": "足够；可以；不错",
+      "example_ja": "お茶はもう結構です。",
+      "example_zh": "茶已经够了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "月曜日",
+      "reading": "げつようび",
+      "meaning_zh": "星期一",
+      "example_ja": "月曜日に学校へ行きます。",
+      "example_zh": "星期一去学校。",
+      "level_hint": "N5"
     }
   ]
 }
