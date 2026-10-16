@@ -32,11 +32,11 @@ def inspect(root=ROOT):
                       "coverage_percent":round(100*len(present)/len(keys),2) if keys else 0,
                       "missing":len(keys-present)}
     orphan=set(by_key)-known
-    for key in sorted(orphan): problems.append("not in reference lists: "+repr(key))
+    unmatched=[repr(key) for key in sorted(orphan)]
     return {"review_status":data.get("review_status","unknown"),
             "unique_reference_words":len(known),"draft_entries":len(by_key),
             "drafts_matching_reference":len(set(by_key)&known),
-            "levels":stats,"issues":problems,
+            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,
             "note":"Draft coverage is not reviewed/approved Chinese translation coverage."}
 
 if __name__=="__main__":
