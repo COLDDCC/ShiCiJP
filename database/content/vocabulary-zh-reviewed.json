@@ -2090,6 +2090,406 @@
       "example_ja": "今日は寒いです。",
       "example_zh": "今天很冷。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "塩",
+      "reading": "しお",
+      "meaning_zh": "盐",
+      "example_ja": "料理に塩を入れます。",
+      "example_zh": "往菜里加盐。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "しかし",
+      "reading": "しかし",
+      "meaning_zh": "但是；然而",
+      "example_ja": "今日は寒いです。しかし、天気はいいです。",
+      "example_zh": "今天很冷，但是天气很好。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "時間",
+      "reading": "じかん",
+      "meaning_zh": "时间；小时",
+      "example_ja": "時間がありません。",
+      "example_zh": "没有时间。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "仕事",
+      "reading": "しごと",
+      "meaning_zh": "工作",
+      "example_ja": "父は毎日仕事に行きます。",
+      "example_zh": "父亲每天去上班。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "辞書",
+      "reading": "じしょ",
+      "meaning_zh": "词典；字典",
+      "example_ja": "辞書で言葉を調べます。",
+      "example_zh": "用词典查单词。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "静か",
+      "reading": "しずか",
+      "meaning_zh": "安静的；宁静的",
+      "example_ja": "この部屋は静かです。",
+      "example_zh": "这个房间很安静。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "下",
+      "reading": "した",
+      "meaning_zh": "下面；下方",
+      "example_ja": "机の下に猫がいます。",
+      "example_zh": "桌子下面有一只猫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "七",
+      "reading": "しち",
+      "meaning_zh": "七；数字七",
+      "example_ja": "七時に起きます。",
+      "example_zh": "七点起床。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "質問",
+      "reading": "しつもん",
+      "meaning_zh": "问题；提问",
+      "example_ja": "先生に質問があります。",
+      "example_zh": "我有问题想问老师。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "自転車",
+      "reading": "じてんしゃ",
+      "meaning_zh": "自行车",
+      "example_ja": "自転車で学校へ行きます。",
+      "example_zh": "骑自行车去学校。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "自動車",
+      "reading": "じどうしゃ",
+      "meaning_zh": "汽车",
+      "example_ja": "自動車を運転します。",
+      "example_zh": "开汽车。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "死ぬ",
+      "reading": "しぬ",
+      "meaning_zh": "死亡；死去",
+      "example_ja": "花が水不足で死んでしまいました。",
+      "example_zh": "花因为缺水枯死了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "字引",
+      "reading": "じびき",
+      "meaning_zh": "字典；词典",
+      "example_ja": "字引で漢字を調べます。",
+      "example_zh": "用字典查汉字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "自分",
+      "reading": "じぶん",
+      "meaning_zh": "自己",
+      "example_ja": "自分で料理を作ります。",
+      "example_zh": "自己做饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "閉まる",
+      "reading": "しまる",
+      "meaning_zh": "关闭（自动词）",
+      "example_ja": "店は六時に閉まります。",
+      "example_zh": "商店六点关门。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "閉める",
+      "reading": "しめる",
+      "meaning_zh": "关上；关闭（他动词）",
+      "example_ja": "窓を閉めてください。",
+      "example_zh": "请关上窗户。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "締める",
+      "reading": "しめる",
+      "meaning_zh": "系紧；勒紧",
+      "example_ja": "シートベルトを締めます。",
+      "example_zh": "系好安全带。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "写真",
+      "reading": "しゃしん",
+      "meaning_zh": "照片",
+      "example_ja": "写真を撮ります。",
+      "example_zh": "拍照片。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "シャツ",
+      "reading": "シャツ",
+      "meaning_zh": "衬衫；上衣",
+      "example_ja": "白いシャツを着ます。",
+      "example_zh": "穿白色衬衫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "シャワー",
+      "reading": "シャワー",
+      "meaning_zh": "淋浴；花洒",
+      "example_ja": "朝、シャワーを浴びます。",
+      "example_zh": "早上洗淋浴。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "十",
+      "reading": "じゅう",
+      "meaning_zh": "十；数字十",
+      "example_ja": "十まで数えます。",
+      "example_zh": "数到十。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "授業",
+      "reading": "じゅぎょう",
+      "meaning_zh": "课；课程",
+      "example_ja": "授業は九時に始まります。",
+      "example_zh": "九点开始上课。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "宿題",
+      "reading": "しゅくだい",
+      "meaning_zh": "作业",
+      "example_ja": "宿題をします。",
+      "example_zh": "做作业。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "上手",
+      "reading": "じょうず",
+      "meaning_zh": "擅长；高明",
+      "example_ja": "姉は料理が上手です。",
+      "example_zh": "姐姐很擅长做饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "丈夫",
+      "reading": "じょうぶ",
+      "meaning_zh": "结实的；健康的",
+      "example_ja": "このかばんは丈夫です。",
+      "example_zh": "这个包很结实。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "醤油",
+      "reading": "しょうゆ",
+      "meaning_zh": "酱油",
+      "example_ja": "醤油を少し入れます。",
+      "example_zh": "加一点酱油。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "食堂",
+      "reading": "しょくどう",
+      "meaning_zh": "食堂；餐厅",
+      "example_ja": "学校の食堂で昼ご飯を食べます。",
+      "example_zh": "在学校食堂吃午饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "知る",
+      "reading": "しる",
+      "meaning_zh": "知道；了解",
+      "example_ja": "その人の名前を知っています。",
+      "example_zh": "我知道那个人的名字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "白",
+      "reading": "しろ",
+      "meaning_zh": "白色",
+      "example_ja": "白が好きです。",
+      "example_zh": "我喜欢白色。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "白い",
+      "reading": "しろい",
+      "meaning_zh": "白色的",
+      "example_ja": "白い猫がいます。",
+      "example_zh": "有一只白猫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "新聞",
+      "reading": "しんぶん",
+      "meaning_zh": "报纸",
+      "example_ja": "毎朝、新聞を読みます。",
+      "example_zh": "每天早上看报纸。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "水曜日",
+      "reading": "すいようび",
+      "meaning_zh": "星期三",
+      "example_ja": "水曜日に会いましょう。",
+      "example_zh": "星期三见吧。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "吸う",
+      "reading": "すう",
+      "meaning_zh": "吸；抽（烟）",
+      "example_ja": "ここでたばこを吸わないでください。",
+      "example_zh": "请不要在这里吸烟。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "スカート",
+      "reading": "スカート",
+      "meaning_zh": "裙子",
+      "example_ja": "新しいスカートを買いました。",
+      "example_zh": "买了一条新裙子。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "好き",
+      "reading": "すき",
+      "meaning_zh": "喜欢的",
+      "example_ja": "私は音楽が好きです。",
+      "example_zh": "我喜欢音乐。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "少ない",
+      "reading": "すくない",
+      "meaning_zh": "少的；不多的",
+      "example_ja": "今日は人が少ないです。",
+      "example_zh": "今天人很少。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "すぐに",
+      "reading": "すぐに",
+      "meaning_zh": "马上；立刻",
+      "example_ja": "すぐに帰ります。",
+      "example_zh": "马上回去。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "少し",
+      "reading": "すこし",
+      "meaning_zh": "一点；稍微",
+      "example_ja": "水を少し飲みます。",
+      "example_zh": "喝一点水。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "涼しい",
+      "reading": "すずしい",
+      "meaning_zh": "凉爽的",
+      "example_ja": "秋は涼しいです。",
+      "example_zh": "秋天很凉爽。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ストーブ",
+      "reading": "ストーブ",
+      "meaning_zh": "暖炉；取暖炉",
+      "example_ja": "寒いのでストーブをつけます。",
+      "example_zh": "天气冷，所以打开取暖炉。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "スプーン",
+      "reading": "スプーン",
+      "meaning_zh": "勺子",
+      "example_ja": "スプーンでスープを飲みます。",
+      "example_zh": "用勺子喝汤。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "スポーツ",
+      "reading": "スポーツ",
+      "meaning_zh": "体育运动",
+      "example_ja": "スポーツが好きです。",
+      "example_zh": "我喜欢运动。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ズボン",
+      "reading": "ズボン",
+      "meaning_zh": "裤子",
+      "example_ja": "黒いズボンをはきます。",
+      "example_zh": "穿黑色裤子。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "住む",
+      "reading": "すむ",
+      "meaning_zh": "居住；住",
+      "example_ja": "東京に住んでいます。",
+      "example_zh": "住在东京。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "する",
+      "reading": "する",
+      "meaning_zh": "做；进行",
+      "example_ja": "毎日、日本語を勉強します。",
+      "example_zh": "每天学习日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "座る",
+      "reading": "すわる",
+      "meaning_zh": "坐",
+      "example_ja": "ここに座ってください。",
+      "example_zh": "请坐在这里。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "背",
+      "reading": "せい",
+      "meaning_zh": "身高；个子",
+      "example_ja": "弟は背が高いです。",
+      "example_zh": "弟弟个子高。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "生徒",
+      "reading": "せいと",
+      "meaning_zh": "学生；中小学生",
+      "example_ja": "生徒が教室にいます。",
+      "example_zh": "学生在教室里。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "セーター",
+      "reading": "セーター",
+      "meaning_zh": "毛衣",
+      "example_ja": "冬はセーターを着ます。",
+      "example_zh": "冬天穿毛衣。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "石鹸",
+      "reading": "せっけん",
+      "meaning_zh": "肥皂",
+      "example_ja": "石鹸で手を洗います。",
+      "example_zh": "用肥皂洗手。",
+      "level_hint": "N5"
     }
   ]
 }
