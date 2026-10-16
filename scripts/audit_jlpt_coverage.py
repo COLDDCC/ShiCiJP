@@ -28,11 +28,13 @@ def inspect(root=ROOT):
         keys={(r["expression"].strip(),(r.get("reading") or "").strip()) for r in rows if r.get("expression","").strip()}
         known.update(keys)
         present=keys & set(by_key)
+        alias_hits={ (item["variant_of"],item["reading"]) for item in entries if item.get("variant_of") and (item["variant_of"],item["reading"]) in keys }
+        present |= alias_hits
         stats[level]={"reference_words":len(keys),"chinese_drafts":len(present),
                       "coverage_percent":round(100*len(present)/len(keys),2) if keys else 0,
                       "missing":len(keys-present)}
     orphan=set(by_key)-known
-    unmatched=[repr(key) for key in sorted(orphan)]
+    unmatched=[repr(key) for key in sorted(orphan) if not by_key[key].get("variant_of")]
     return {"review_status":data.get("review_status","unknown"),
             "unique_reference_words":len(known),"draft_entries":len(by_key),
             "drafts_matching_reference":len(set(by_key)&known),
