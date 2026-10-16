@@ -9,7 +9,8 @@
     "test": "node scripts/smoke_test.js",
     "build:jlpt-db": "python3 scripts/build_jlpt_db.py",
     "test:jlpt-db": "python3 scripts/test_jlpt_db.py",
-    "export:jlpt-vocab": "python3 scripts/export_jlpt_vocab.py"
+    "export:jlpt-vocab": "python3 scripts/export_jlpt_vocab.py",
+    "import:jlpt-questions": "python3 scripts/import_jlpt_questions.py"
   },
   "repository": {
     "type": "git",
