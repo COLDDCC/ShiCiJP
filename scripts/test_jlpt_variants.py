@@ -6,9 +6,15 @@ import tempfile
 from pathlib import Path
 from build_jlpt_db import ROOT, build
 from build_jlpt_content import apply_chinese_entries, publish
+from audit_jlpt_coverage import inspect
 
 drafts=json.loads((ROOT/"database/content/vocabulary-zh-reviewed.json").read_text(encoding="utf-8"))["entries"]
 variant=next(x for x in drafts if x["expression"]=="鞄" and x["reading"]=="かばん")
+coverage=inspect()
+assert not coverage["issues"],coverage["issues"]
+assert coverage["draft_entries"]==len(drafts)
+assert coverage["drafts_matching_reference"]+coverage["unmatched_draft_count"]==len(drafts)
+assert coverage["unmatched_draft_count"]==1,coverage["unmatched_reference_entries"]
 
 with tempfile.TemporaryDirectory() as tmp:
     root=Path(tmp)
