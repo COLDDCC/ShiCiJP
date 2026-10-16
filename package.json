@@ -8,7 +8,8 @@
     "serve": "python3 -m http.server 8000 -d public",
     "test": "node scripts/smoke_test.js",
     "build:jlpt-db": "python3 scripts/build_jlpt_db.py",
-    "test:jlpt-db": "python3 scripts/test_jlpt_db.py"
+    "test:jlpt-db": "python3 scripts/test_jlpt_db.py",
+    "export:jlpt-vocab": "python3 scripts/export_jlpt_vocab.py"
   },
   "repository": {
     "type": "git",
