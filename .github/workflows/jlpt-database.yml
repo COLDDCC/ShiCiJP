@@ -7,6 +7,7 @@ on:
       - 'scripts/build_jlpt_db.py'
       - 'scripts/build_jlpt_content.py'
       - 'scripts/audit_jlpt_coverage.py'
+      - 'scripts/test_jlpt_variants.py'
       - 'scripts/import_jlpt_questions.py'
       - 'public/jlpt/vocabulary/**'
       - 'scripts/test_jlpt_db.py'
@@ -39,4 +40,5 @@ jobs:
           python3 scripts/test_jlpt_db.py
           python3 scripts/test_jlpt_content.py
           python3 scripts/audit_jlpt_coverage.py --strict
+          python3 scripts/test_jlpt_variants.py
           python3 scripts/build_jlpt_content.py --db /tmp/shicijp-jlpt-ci.sqlite --output /tmp/shicijp-jlpt-export
