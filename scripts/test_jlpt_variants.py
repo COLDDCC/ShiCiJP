@@ -37,19 +37,25 @@ with tempfile.TemporaryDirectory() as tmp:
             if record:
                 assert record[0]==item["meaning_zh"],("Missing translated meaning",target)
     publish(db,root/"export")
-    data=json.loads((root/"export"/"n5.json").read_text(encoding="utf-8"))
+    exported={level:json.loads((root/"export"/(level+".json")).read_text(encoding="utf-8")) for level in ("n1","n2","n3","n4","n5")}
+    data=exported["n5"]
     entries=[w for w in data["words"] if w["expression"]=="かばん" and w["reading"]=="かばん"]
     assert len(entries)==1,entries
     assert entries[0]["meaning_zh"]==variant["meaning_zh"],entries
     assert entries[0]["example_ja"]==variant["example_ja"],entries
     assert entries[0]["example_zh"]==variant["example_zh"],entries
     assert data["official_exam_appearances_available"] is False
-    published={(w["expression"],w["reading"]):w for w in data["words"]}
-    for item in drafts:
-        target=(item.get("variant_of") or item["expression"],item["reading"])
-        if target in published:
-            word=published[target]
-            assert word["meaning_zh"]==item["meaning_zh"],target
-            assert word["example_ja"]==item["example_ja"],target
-            assert word["example_zh"]==item["example_zh"],target
-    print("PASS: orthography alias merges into N5 reference word and examples")
+    for level,payload in exported.items():
+        assert payload["level"]==level.upper(),level
+        assert payload["official_exam_appearances_available"] is False,level
+        assert payload["level_classification"]=="community_reference_not_official",level
+        published={(w["expression"],w["reading"]):w for w in payload["words"]}
+        assert len(published)==len(payload["words"]),("Duplicate exported words",level)
+        for item in drafts:
+            target=(item.get("variant_of") or item["expression"],item["reading"])
+            if target in published:
+                word=published[target]
+                assert word["meaning_zh"]==item["meaning_zh"],(level,target)
+                assert word["example_ja"]==item["example_ja"],(level,target)
+                assert word["example_zh"]==item["example_zh"],(level,target)
+    print("PASS: all N1–N5 exports preserve editorial translations, examples and source labels")
