@@ -5170,6 +5170,582 @@
       "example_ja": "今日は天気が悪いです。",
       "example_zh": "今天天气不好。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "ああ",
+      "reading": "ああ",
+      "meaning_zh": "啊；哦（感叹）",
+      "example_ja": "ああ、分かりました。",
+      "example_zh": "啊，我明白了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "足; 脚",
+      "reading": "あし",
+      "meaning_zh": "脚；腿",
+      "example_ja": "足が痛いです。",
+      "example_zh": "腿疼。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "いい; よい",
+      "reading": "いい; よい",
+      "meaning_zh": "好的；不错的",
+      "example_ja": "今日はいい天気です。",
+      "example_zh": "今天天气很好。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "行く",
+      "reading": "いく; ゆく",
+      "meaning_zh": "去；前往",
+      "example_ja": "明日、学校へ行きます。",
+      "example_zh": "明天去学校。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "うち",
+      "reading": "うち",
+      "meaning_zh": "家；家里；我们家",
+      "example_ja": "うちに遊びに来てください。",
+      "example_zh": "请来我家玩。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～円",
+      "reading": "～えん",
+      "meaning_zh": "日元（金额后缀）",
+      "example_ja": "この本は五百円です。",
+      "example_zh": "这本书五百日元。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "お～",
+      "reading": "お～",
+      "meaning_zh": "敬语前缀；表示礼貌",
+      "example_ja": "お名前を教えてください。",
+      "example_zh": "请告诉我您的名字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "伯父; 叔父さん",
+      "reading": "おじさん",
+      "meaning_zh": "叔叔；伯伯；舅舅",
+      "example_ja": "おじさんは東京に住んでいます。",
+      "example_zh": "叔叔住在东京。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "伯母さん; 叔母さん",
+      "reading": "おばさん",
+      "meaning_zh": "阿姨；伯母；婶婶",
+      "example_ja": "おばさんに会いました。",
+      "example_zh": "见到了阿姨。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～回",
+      "reading": "～かい",
+      "meaning_zh": "次；回（次数助数词）",
+      "example_ja": "日本へ二回行きました。",
+      "example_zh": "去过日本两次。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～階",
+      "reading": "～かい",
+      "meaning_zh": "楼层（助数词）",
+      "example_ja": "教室は三階です。",
+      "example_zh": "教室在三楼。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～か月",
+      "reading": "～かげつ",
+      "meaning_zh": "个月（时长助数词）",
+      "example_ja": "日本語を三か月勉強しました。",
+      "example_zh": "学了三个月日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～月",
+      "reading": "～がつ",
+      "meaning_zh": "月份后缀",
+      "example_ja": "五月に旅行します。",
+      "example_zh": "五月去旅行。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～がる",
+      "reading": "～がる",
+      "meaning_zh": "表现出某种感情或感觉的后缀",
+      "example_ja": "子供が怖がっています。",
+      "example_zh": "孩子表现得很害怕。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "川; 河",
+      "reading": "かわ",
+      "meaning_zh": "河流；河",
+      "example_ja": "川で魚を見ました。",
+      "example_zh": "在河里看到了鱼。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～側",
+      "reading": "～がわ",
+      "meaning_zh": "一侧；一边",
+      "example_ja": "右側に座ってください。",
+      "example_zh": "请坐在右边。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "九",
+      "reading": "きゅう",
+      "meaning_zh": "九（读作きゅう）",
+      "example_ja": "九時に会いましょう。",
+      "example_zh": "九点见吧。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "キロ; キログラム",
+      "reading": "キロ; キログラム",
+      "meaning_zh": "千克；公斤",
+      "example_ja": "米を二キロ買いました。",
+      "example_zh": "买了两公斤大米。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "キロ; キロメートル",
+      "reading": "キロ; キロメートル",
+      "meaning_zh": "千米；公里",
+      "example_ja": "駅まで三キロです。",
+      "example_zh": "到车站有三公里。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "九",
+      "reading": "く",
+      "meaning_zh": "九（读作く）",
+      "example_ja": "九月は秋です。",
+      "example_zh": "九月是秋天。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "下さい",
+      "reading": "ください",
+      "meaning_zh": "请给我；请（请求）",
+      "example_ja": "水を下さい。",
+      "example_zh": "请给我水。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～くらい; ぐらい",
+      "reading": "～くらい; ぐらい",
+      "meaning_zh": "大约；左右；程度",
+      "example_ja": "駅まで十分ぐらいです。",
+      "example_zh": "到车站大约十分钟。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "結婚",
+      "reading": "けっこん (する)",
+      "meaning_zh": "结婚",
+      "example_ja": "来年、結婚します。",
+      "example_zh": "明年结婚。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～個",
+      "reading": "～こ",
+      "meaning_zh": "个（助数词）",
+      "example_ja": "卵を三個買いました。",
+      "example_zh": "买了三个鸡蛋。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～語",
+      "reading": "～ご",
+      "meaning_zh": "语言后缀",
+      "example_ja": "日本語を勉強します。",
+      "example_zh": "学习日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～ころ; ～ごろ",
+      "reading": "～ころ; ～ごろ",
+      "meaning_zh": "大约……时候",
+      "example_ja": "七時ごろ帰ります。",
+      "example_zh": "七点左右回去。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "さあ",
+      "reading": "さあ",
+      "meaning_zh": "来吧；那么",
+      "example_ja": "さあ、行きましょう。",
+      "example_zh": "来吧，我们走。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～歳",
+      "reading": "～さい",
+      "meaning_zh": "岁（年龄后缀）",
+      "example_ja": "妹は十歳です。",
+      "example_zh": "妹妹十岁。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～冊",
+      "reading": "～さつ",
+      "meaning_zh": "册；本（书籍助数词）",
+      "example_ja": "本を三冊買いました。",
+      "example_zh": "买了三本书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "さ来年",
+      "reading": "さらいねん",
+      "meaning_zh": "后年",
+      "example_ja": "さ来年、日本へ行きます。",
+      "example_zh": "后年去日本。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～さん",
+      "reading": "～さん",
+      "meaning_zh": "先生；女士（称呼后缀）",
+      "example_ja": "田中さんは先生です。",
+      "example_zh": "田中先生是老师。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "三",
+      "reading": "さん",
+      "meaning_zh": "三；数字三",
+      "example_ja": "三時に会います。",
+      "example_zh": "三点见面。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "散歩",
+      "reading": "さんぽ (する)",
+      "meaning_zh": "散步",
+      "example_ja": "毎朝、公園を散歩します。",
+      "example_zh": "每天早上在公园散步。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "四",
+      "reading": "し",
+      "meaning_zh": "四（读作し）",
+      "example_ja": "四月に学校が始まります。",
+      "example_zh": "四月开学。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～時",
+      "reading": "～じ",
+      "meaning_zh": "点钟（时间后缀）",
+      "example_ja": "六時に起きます。",
+      "example_zh": "六点起床。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～時間",
+      "reading": "～じかん",
+      "meaning_zh": "小时（时长后缀）",
+      "example_ja": "二時間勉強しました。",
+      "example_zh": "学习了两个小时。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "じゃ; じゃあ",
+      "reading": "じゃ; じゃあ",
+      "meaning_zh": "那么；那就（口语）",
+      "example_ja": "じゃあ、また明日。",
+      "example_zh": "那么，明天见。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～中",
+      "reading": "～じゅう",
+      "meaning_zh": "整个期间；整个范围",
+      "example_ja": "一日中、勉強しました。",
+      "example_zh": "学习了一整天。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～週間",
+      "reading": "～しゅうかん",
+      "meaning_zh": "周；星期（时长后缀）",
+      "example_ja": "一週間休みます。",
+      "example_zh": "休息一周。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～人",
+      "reading": "～じん",
+      "meaning_zh": "某国人；某地人后缀",
+      "example_ja": "あの人は日本人です。",
+      "example_zh": "那个人是日本人。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～すぎ",
+      "reading": "～すぎ",
+      "meaning_zh": "超过；过于",
+      "example_ja": "食べすぎました。",
+      "example_zh": "吃得太多了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～ずつ",
+      "reading": "～ずつ",
+      "meaning_zh": "每次；各；分别",
+      "example_ja": "一人に二つずつ配ります。",
+      "example_zh": "每人分两个。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "そう; そうです",
+      "reading": "そう; そうです",
+      "meaning_zh": "是那样；是的",
+      "example_ja": "はい、そうです。",
+      "example_zh": "是的，没错。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "掃除",
+      "reading": "そうじ (する)",
+      "meaning_zh": "打扫；清扫",
+      "example_ja": "部屋を掃除します。",
+      "example_zh": "打扫房间。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "そうして; そして",
+      "reading": "そうして; そして",
+      "meaning_zh": "然后；而且",
+      "example_ja": "朝ご飯を食べ、そして出かけました。",
+      "example_zh": "吃了早饭，然后出门了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～台",
+      "reading": "～だい",
+      "meaning_zh": "台；辆（机械、车辆助数词）",
+      "example_ja": "車が二台あります。",
+      "example_zh": "有两辆车。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～だけ",
+      "reading": "～だけ",
+      "meaning_zh": "仅；只",
+      "example_ja": "水だけ飲みます。",
+      "example_zh": "只喝水。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～たち",
+      "reading": "～たち",
+      "meaning_zh": "们（表示复数的后缀）",
+      "example_ja": "子供たちが遊んでいます。",
+      "example_zh": "孩子们正在玩耍。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "たて",
+      "reading": "たて",
+      "meaning_zh": "刚刚……；刚完成（接尾语）",
+      "example_ja": "焼きたてのパンを食べます。",
+      "example_zh": "吃刚烤好的面包。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～中",
+      "reading": "～ちゅう",
+      "meaning_zh": "正在……期间",
+      "example_ja": "今、勉強中です。",
+      "example_zh": "现在正在学习。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～度",
+      "reading": "～ど",
+      "meaning_zh": "度；次（单位后缀）",
+      "example_ja": "今日は二十度です。",
+      "example_zh": "今天二十度。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "十",
+      "reading": "(〜を) とお",
+      "meaning_zh": "十个（传统计数）",
+      "example_ja": "十まで数えます。",
+      "example_zh": "数到十。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～時",
+      "reading": "～とき",
+      "meaning_zh": "……的时候",
+      "example_ja": "子供の時、よく泳ぎました。",
+      "example_zh": "小时候经常游泳。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～など",
+      "reading": "～など",
+      "meaning_zh": "等等；之类",
+      "example_ja": "本や雑誌などを読みます。",
+      "example_zh": "读书和杂志等。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "何",
+      "reading": "なん; なに",
+      "meaning_zh": "什么",
+      "example_ja": "これは何ですか。",
+      "example_zh": "这是什么？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "何～",
+      "reading": "なん～",
+      "meaning_zh": "几；多少（疑问前缀）",
+      "example_ja": "何時ですか。",
+      "example_zh": "几点了？",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～日",
+      "reading": "～にち",
+      "meaning_zh": "日；天（日期、天数后缀）",
+      "example_ja": "今日は十五日です。",
+      "example_zh": "今天是十五号。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～人",
+      "reading": "～にん",
+      "meaning_zh": "人（人数助数词）",
+      "example_ja": "教室に三人います。",
+      "example_zh": "教室里有三个人。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～年",
+      "reading": "～ねん",
+      "meaning_zh": "年（年份、年数后缀）",
+      "example_ja": "日本に二年住みました。",
+      "example_zh": "在日本住了两年。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～杯",
+      "reading": "～はい",
+      "meaning_zh": "杯（助数词）",
+      "example_ja": "お茶を二杯飲みました。",
+      "example_zh": "喝了两杯茶。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "初め; 始め",
+      "reading": "はじめ",
+      "meaning_zh": "开始；最初",
+      "example_ja": "初めは難しかったです。",
+      "example_zh": "一开始很难。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～番",
+      "reading": "～ばん",
+      "meaning_zh": "号；顺序",
+      "example_ja": "私は三番です。",
+      "example_zh": "我是三号。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～匹",
+      "reading": "～ひき",
+      "meaning_zh": "只；条（小动物助数词）",
+      "example_ja": "猫が二匹います。",
+      "example_zh": "有两只猫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～分",
+      "reading": "～ふん",
+      "meaning_zh": "分钟（时长后缀）",
+      "example_ja": "五分待ってください。",
+      "example_zh": "请等五分钟。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "勉強",
+      "reading": "べんきょう (する)",
+      "meaning_zh": "学习",
+      "example_ja": "毎日日本語を勉強します。",
+      "example_zh": "每天学习日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～本",
+      "reading": "～ほん",
+      "meaning_zh": "根；支；瓶（细长物助数词）",
+      "example_ja": "水を二本買いました。",
+      "example_zh": "买了两瓶水。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～枚",
+      "reading": "～まい",
+      "meaning_zh": "张；片（薄平物助数词）",
+      "example_ja": "紙を三枚ください。",
+      "example_zh": "请给我三张纸。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "毎月",
+      "reading": "まいげつ; まいつき",
+      "meaning_zh": "每个月",
+      "example_ja": "毎月本を買います。",
+      "example_zh": "每个月买书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "毎年",
+      "reading": "まいねん; まいとし",
+      "meaning_zh": "每年",
+      "example_ja": "毎年京都へ行きます。",
+      "example_zh": "每年去京都。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～前",
+      "reading": "～まえ",
+      "meaning_zh": "……之前；……前面",
+      "example_ja": "駅の前で待ちます。",
+      "example_zh": "在车站前等。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "丸い; 円い",
+      "reading": "まるい",
+      "meaning_zh": "圆的；圆形的",
+      "example_ja": "月は丸いです。",
+      "example_zh": "月亮是圆的。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "～屋",
+      "reading": "～や",
+      "meaning_zh": "店铺；从事某职业的人（后缀）",
+      "example_ja": "花屋で花を買います。",
+      "example_zh": "在花店买花。",
+      "level_hint": "N5"
     }
   ]
 }
