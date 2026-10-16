@@ -44,4 +44,12 @@ with tempfile.TemporaryDirectory() as tmp:
     assert entries[0]["example_ja"]==variant["example_ja"],entries
     assert entries[0]["example_zh"]==variant["example_zh"],entries
     assert data["official_exam_appearances_available"] is False
+    published={(w["expression"],w["reading"]):w for w in data["words"]}
+    for item in drafts:
+        target=(item.get("variant_of") or item["expression"],item["reading"])
+        if target in published:
+            word=published[target]
+            assert word["meaning_zh"]==item["meaning_zh"],target
+            assert word["example_ja"]==item["example_ja"],target
+            assert word["example_zh"]==item["example_zh"],target
     print("PASS: orthography alias merges into N5 reference word and examples")
