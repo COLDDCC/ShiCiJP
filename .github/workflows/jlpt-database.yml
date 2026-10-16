@@ -18,7 +18,14 @@ on:
       - 'database/**'
       - 'data-src/n*.csv'
       - 'scripts/build_jlpt_db.py'
+      - 'scripts/build_jlpt_content.py'
+      - 'scripts/audit_jlpt_coverage.py'
+      - 'scripts/import_jlpt_questions.py'
       - 'scripts/test_jlpt_db.py'
+      - 'scripts/test_jlpt_content.py'
+      - 'public/jlpt/vocabulary/**'
+      - 'public/jlpt/practice/**'
+      - '.github/workflows/jlpt-database.yml'
 jobs:
   verify:
     runs-on: ubuntu-latest
