@@ -15,16 +15,23 @@ def apply_chinese_entries(con):
     seen=set()
     for item in content["entries"]:
         key=(item["expression"],item["reading"])
-        if key in seen: raise ValueError("Duplicate Chinese vocabulary entry: "+repr(key))
+        if key in seen:
+            raise ValueError("Duplicate Chinese vocabulary entry: "+repr(key))
         seen.add(key)
-        if not item.get("meaning_zh") or not item.get("example_ja") or not item.get("example_zh"):
+        if not all(item.get(k) for k in ("meaning_zh","example_ja","example_zh")):
             raise ValueError("Missing translation or example: "+repr(key))
         con.execute("INSERT INTO vocabulary(expression,reading,meaning_zh) VALUES(?,?,?) "
                     "ON CONFLICT(expression,reading) DO UPDATE SET meaning_zh=excluded.meaning_zh",
                     (item["expression"],item["reading"],item["meaning_zh"]))
+        if item.get("variant_of"):
+            target=(item["variant_of"],item["reading"])
+            row=con.execute("SELECT id FROM vocabulary WHERE expression=? AND reading=?",target).fetchone()
+            if not row:
+                raise ValueError("Variant target missing: "+repr(target))
+            con.execute("UPDATE vocabulary SET meaning_zh=? WHERE id=?",
+                        (item["meaning_zh"],row[0]))
     con.commit()
-    return { (x["expression"],x["reading"]):x for x in content["entries"] }
-
+    return seen
 
 def publish(db_path: Path, destination: Path) -> None:
     destination.mkdir(parents=True, exist_ok=True)
