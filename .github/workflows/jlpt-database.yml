@@ -5,6 +5,9 @@ on:
       - 'database/**'
       - 'data-src/n*.csv'
       - 'scripts/build_jlpt_db.py'
+      - 'scripts/build_jlpt_content.py'
+      - 'scripts/import_jlpt_questions.py'
+      - 'public/jlpt/vocabulary/**'
       - 'scripts/test_jlpt_db.py'
       - 'scripts/test_jlpt_content.py'
       - 'public/jlpt/practice/**'
@@ -27,3 +30,4 @@ jobs:
         run: |
           python3 scripts/test_jlpt_db.py
           python3 scripts/test_jlpt_content.py
+          python3 scripts/build_jlpt_content.py --db /tmp/shicijp-jlpt-ci.sqlite --output /tmp/shicijp-jlpt-export
