@@ -23,8 +23,13 @@ with tempfile.TemporaryDirectory() as tmp:
         row=con.execute("SELECT meaning_zh FROM vocabulary WHERE expression=? AND reading=?",
                         ("かばん","かばん")).fetchone()
         assert row and row[0]==variant["meaning_zh"],row
-        orphan=con.execute("SELECT COUNT(*) FROM vocabulary v LEFT JOIN vocabulary_levels l ON l.vocabulary_id=v.id WHERE v.expression=? AND v.reading=? AND l.vocabulary_id IS NULL",("りんご","りんご")).fetchone()[0]
-        assert orphan==0,"Unmatched draft must not create orphan vocabulary"
+        orphans=con.execute("SELECT COUNT(*) FROM vocabulary v LEFT JOIN vocabulary_levels l ON l.vocabulary_id=v.id WHERE l.vocabulary_id IS NULL").fetchone()[0]
+        assert orphans==0,"Editorial import must not create orphan vocabulary"
+        for item in drafts:
+            target=(item.get("variant_of") or item["expression"],item["reading"])
+            record=con.execute("SELECT meaning_zh FROM vocabulary WHERE expression=? AND reading=?",target).fetchone()
+            if record:
+                assert record[0]==item["meaning_zh"],("Missing translated meaning",target)
     publish(db,root/"export")
     data=json.loads((root/"export"/"n5.json").read_text(encoding="utf-8"))
     entries=[w for w in data["words"] if w["expression"]=="かばん" and w["reading"]=="かばん"]
