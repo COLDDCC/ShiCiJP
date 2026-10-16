@@ -4970,6 +4970,206 @@
       "example_ja": "私は朝が弱いです。",
       "example_zh": "我不擅长早起。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "来月",
+      "reading": "らいげつ",
+      "meaning_zh": "下个月",
+      "example_ja": "来月、日本へ行きます。",
+      "example_zh": "下个月去日本。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "来週",
+      "reading": "らいしゅう",
+      "meaning_zh": "下周",
+      "example_ja": "来週、試験があります。",
+      "example_zh": "下周有考试。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "来年",
+      "reading": "らいねん",
+      "meaning_zh": "明年",
+      "example_ja": "来年、大学に入ります。",
+      "example_zh": "明年上大学。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ラジオ",
+      "reading": "ラジオ",
+      "meaning_zh": "收音机；广播",
+      "example_ja": "毎朝ラジオを聞きます。",
+      "example_zh": "每天早上听广播。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ラジオカセ",
+      "reading": "ラジオカセ",
+      "meaning_zh": "收录机",
+      "example_ja": "ラジオカセで音楽を聞きます。",
+      "example_zh": "用收录机听音乐。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "りっぱ",
+      "reading": "りっぱ",
+      "meaning_zh": "出色的；气派的",
+      "example_ja": "りっぱな建物ですね。",
+      "example_zh": "真是气派的建筑啊。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "留学生",
+      "reading": "りゅうがくせい",
+      "meaning_zh": "留学生",
+      "example_ja": "友達は日本の留学生です。",
+      "example_zh": "朋友是在日本的留学生。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "両親",
+      "reading": "りょうしん",
+      "meaning_zh": "父母；双亲",
+      "example_ja": "両親と旅行します。",
+      "example_zh": "和父母去旅行。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "料理",
+      "reading": "りょうり",
+      "meaning_zh": "菜肴；烹饪",
+      "example_ja": "日本の料理が好きです。",
+      "example_zh": "我喜欢日本菜。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "旅行",
+      "reading": "りょこう",
+      "meaning_zh": "旅行",
+      "example_ja": "夏休みに旅行します。",
+      "example_zh": "暑假去旅行。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "零",
+      "reading": "れい",
+      "meaning_zh": "零",
+      "example_ja": "温度は零度です。",
+      "example_zh": "温度是零度。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "meaning_zh": "冰箱",
+      "example_ja": "牛乳は冷蔵庫にあります。",
+      "example_zh": "牛奶在冰箱里。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "レコード",
+      "reading": "レコード",
+      "meaning_zh": "唱片；记录",
+      "example_ja": "古いレコードを聞きます。",
+      "example_zh": "听老唱片。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "レストラン",
+      "reading": "レストラン",
+      "meaning_zh": "餐厅",
+      "example_ja": "レストランで夕飯を食べます。",
+      "example_zh": "在餐厅吃晚饭。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "廊下",
+      "reading": "ろうか",
+      "meaning_zh": "走廊",
+      "example_ja": "廊下を走らないでください。",
+      "example_zh": "请不要在走廊里跑。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "六",
+      "reading": "ろく",
+      "meaning_zh": "六；数字六",
+      "example_ja": "六時に起きます。",
+      "example_zh": "六点起床。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "ワイシャツ",
+      "reading": "ワイシャツ",
+      "meaning_zh": "衬衫",
+      "example_ja": "白いワイシャツを着ます。",
+      "example_zh": "穿白色衬衫。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "若い",
+      "reading": "わかい",
+      "meaning_zh": "年轻的",
+      "example_ja": "兄はまだ若いです。",
+      "example_zh": "哥哥还很年轻。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "分かる",
+      "reading": "わかる",
+      "meaning_zh": "明白；懂",
+      "example_ja": "この言葉の意味が分かります。",
+      "example_zh": "我明白这个词的意思。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "忘れる",
+      "reading": "わすれる",
+      "meaning_zh": "忘记",
+      "example_ja": "傘を忘れました。",
+      "example_zh": "忘带伞了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "私",
+      "reading": "わたし",
+      "meaning_zh": "我（一般说法）",
+      "example_ja": "私は学生です。",
+      "example_zh": "我是学生。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "私",
+      "reading": "わたくし",
+      "meaning_zh": "我（郑重说法）",
+      "example_ja": "私は田中と申します。",
+      "example_zh": "我姓田中。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "渡す",
+      "reading": "わたす",
+      "meaning_zh": "交给；递给",
+      "example_ja": "先生に本を渡します。",
+      "example_zh": "把书交给老师。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "渡る",
+      "reading": "わたる",
+      "meaning_zh": "穿过；渡过",
+      "example_ja": "橋を渡ります。",
+      "example_zh": "过桥。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "悪い",
+      "reading": "わるい",
+      "meaning_zh": "坏的；不好的",
+      "example_ja": "今日は天気が悪いです。",
+      "example_zh": "今天天气不好。",
+      "level_hint": "N5"
     }
   ]
 }
