@@ -738,6 +738,238 @@
       "example_ja": "本を二冊買いました。",
       "example_zh": "买了两本书。",
       "level_hint": "N5"
+    },
+    {
+      "expression": "返す",
+      "reading": "かえす",
+      "meaning_zh": "归还；返还",
+      "example_ja": "明日、本を返します。",
+      "example_zh": "明天还书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "帰る",
+      "reading": "かえる",
+      "meaning_zh": "回去；回家",
+      "example_ja": "六時に家へ帰ります。",
+      "example_zh": "六点回家。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "顔",
+      "reading": "かお",
+      "meaning_zh": "脸；面孔",
+      "example_ja": "顔を洗います。",
+      "example_zh": "洗脸。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "かかる",
+      "reading": "かかる",
+      "meaning_zh": "花费（时间或金钱）",
+      "example_ja": "駅まで十分かかります。",
+      "example_zh": "到车站需要十分钟。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "鍵",
+      "reading": "かぎ",
+      "meaning_zh": "钥匙",
+      "example_ja": "鍵は机の上にあります。",
+      "example_zh": "钥匙在桌子上。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "書く",
+      "reading": "かく",
+      "meaning_zh": "写；书写",
+      "example_ja": "名前を書いてください。",
+      "example_zh": "请写下名字。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "学生",
+      "reading": "がくせい",
+      "meaning_zh": "学生",
+      "example_ja": "私は学生です。",
+      "example_zh": "我是学生。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "傘",
+      "reading": "かさ",
+      "meaning_zh": "伞",
+      "example_ja": "雨なので傘を持っていきます。",
+      "example_zh": "因为下雨，所以带伞去。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "貸す",
+      "reading": "かす",
+      "meaning_zh": "借给；出借",
+      "example_ja": "友達に本を貸します。",
+      "example_zh": "把书借给朋友。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "風",
+      "reading": "かぜ",
+      "meaning_zh": "风",
+      "example_ja": "今日は風が強いです。",
+      "example_zh": "今天风很大。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "風邪",
+      "reading": "かぜ",
+      "meaning_zh": "感冒",
+      "example_ja": "風邪を引きました。",
+      "example_zh": "感冒了。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "家族",
+      "reading": "かぞく",
+      "meaning_zh": "家人；家庭",
+      "example_ja": "家族は四人です。",
+      "example_zh": "我家有四口人。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "片仮名",
+      "reading": "かたかな",
+      "meaning_zh": "片假名",
+      "example_ja": "片仮名を練習します。",
+      "example_zh": "练习片假名。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "学校",
+      "reading": "がっこう",
+      "meaning_zh": "学校",
+      "example_ja": "毎日学校へ行きます。",
+      "example_zh": "每天去学校。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "カップ",
+      "reading": "カップ",
+      "meaning_zh": "杯子",
+      "example_ja": "カップに水を入れます。",
+      "example_zh": "把水倒进杯子。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "家庭",
+      "reading": "かてい",
+      "meaning_zh": "家庭",
+      "example_ja": "家庭で日本語を話します。",
+      "example_zh": "在家里说日语。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "角",
+      "reading": "かど",
+      "meaning_zh": "拐角；街角",
+      "example_ja": "次の角を右に曲がってください。",
+      "example_zh": "请在下一个路口右转。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "花瓶",
+      "reading": "かびん",
+      "meaning_zh": "花瓶",
+      "example_ja": "花瓶に花があります。",
+      "example_zh": "花瓶里有花。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "紙",
+      "reading": "かみ",
+      "meaning_zh": "纸",
+      "example_ja": "紙に書きます。",
+      "example_zh": "写在纸上。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "カメラ",
+      "reading": "カメラ",
+      "meaning_zh": "照相机；相机",
+      "example_ja": "カメラで写真を撮ります。",
+      "example_zh": "用相机拍照。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "火曜日",
+      "reading": "かようび",
+      "meaning_zh": "星期二",
+      "example_ja": "火曜日に会いましょう。",
+      "example_zh": "星期二见吧。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "辛い",
+      "reading": "からい",
+      "meaning_zh": "辣的",
+      "example_ja": "このカレーは辛いです。",
+      "example_zh": "这份咖喱很辣。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "体",
+      "reading": "からだ",
+      "meaning_zh": "身体",
+      "example_ja": "体に気をつけてください。",
+      "example_zh": "请保重身体。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "借りる",
+      "reading": "かりる",
+      "meaning_zh": "借入；借用",
+      "example_ja": "図書館で本を借ります。",
+      "example_zh": "在图书馆借书。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "軽い",
+      "reading": "かるい",
+      "meaning_zh": "轻的",
+      "example_ja": "このかばんは軽いです。",
+      "example_zh": "这个包很轻。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "カレー",
+      "reading": "カレー",
+      "meaning_zh": "咖喱",
+      "example_ja": "昼ご飯にカレーを食べます。",
+      "example_zh": "午饭吃咖喱。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "カレンダー",
+      "reading": "カレンダー",
+      "meaning_zh": "日历",
+      "example_ja": "カレンダーを見ます。",
+      "example_zh": "看日历。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "可愛い",
+      "reading": "かわいい",
+      "meaning_zh": "可爱的",
+      "example_ja": "この猫は可愛いです。",
+      "example_zh": "这只猫很可爱。",
+      "level_hint": "N5"
+    },
+    {
+      "expression": "漢字",
+      "reading": "かんじ",
+      "meaning_zh": "汉字",
+      "example_ja": "漢字を勉強します。",
+      "example_zh": "学习汉字。",
+      "level_hint": "N5"
     }
   ]
 }
