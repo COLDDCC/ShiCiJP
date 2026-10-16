@@ -9,10 +9,27 @@ from build_jlpt_db import ROOT, LEVELS, build
 from import_jlpt_questions import import_questions
 
 
+def apply_chinese_entries(con):
+    content=json.loads((ROOT/"database/content/vocabulary-zh-reviewed.json").read_text(encoding="utf-8"))
+    seen=set()
+    for item in content["entries"]:
+        key=(item["expression"],item["reading"])
+        if key in seen: raise ValueError("Duplicate Chinese vocabulary entry: "+repr(key))
+        seen.add(key)
+        if not item.get("meaning_zh") or not item.get("example_ja") or not item.get("example_zh"):
+            raise ValueError("Missing translation or example: "+repr(key))
+        con.execute("INSERT INTO vocabulary(expression,reading,meaning_zh) VALUES(?,?,?) "
+                    "ON CONFLICT(expression,reading) DO UPDATE SET meaning_zh=excluded.meaning_zh",
+                    (item["expression"],item["reading"],item["meaning_zh"]))
+    con.commit()
+    return { (x["expression"],x["reading"]):x for x in content["entries"] }
+
+
 def publish(db_path: Path, destination: Path) -> None:
     destination.mkdir(parents=True, exist_ok=True)
     with sqlite3.connect(str(db_path)) as con:
         con.execute("PRAGMA foreign_keys=ON")
+        examples={ (x["expression"],x["reading"]):x for x in json.loads((ROOT/"database/content/vocabulary-zh-reviewed.json").read_text(encoding="utf-8"))["entries"] }
         for level in LEVELS:
             rows = con.execute("""
                 SELECT v.id,v.expression,v.reading,v.meaning_en,v.meaning_zh,
@@ -27,7 +44,9 @@ def publish(db_path: Path, destination: Path) -> None:
             """, (level,level)).fetchall()
             words = [{"id":r[0],"expression":r[1],"reading":r[2],
                       "meaning_en":r[3],"meaning_zh":r[4],
-                      "original_practice_question_count":r[5]} for r in rows]
+                      "original_practice_question_count":r[5],
+                      "example_ja":examples.get((r[1],r[2]),{}).get("example_ja"),
+                      "example_zh":examples.get((r[1],r[2]),{}).get("example_zh")} for r in rows]
             payload = {"level":level,"source":"jamsinclair/open-anki-jlpt-decks",
                        "level_classification":"community_reference_not_official",
                        "official_exam_appearances_available":False,
@@ -49,6 +68,7 @@ def main():
     with sqlite3.connect(str(args.db)) as con:
         con.execute("PRAGMA foreign_keys=ON")
         import_questions(con)
+        apply_chinese_entries(con)
         errors=con.execute("PRAGMA foreign_key_check").fetchall()
         if errors: raise RuntimeError("Foreign key errors: "+repr(errors[:5]))
         print("Original practice questions:",con.execute("SELECT COUNT(*) FROM questions").fetchone()[0])
