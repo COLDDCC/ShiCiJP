@@ -6,6 +6,8 @@ on:
       - 'data-src/n*.csv'
       - 'scripts/build_jlpt_db.py'
       - 'scripts/test_jlpt_db.py'
+      - 'scripts/test_jlpt_content.py'
+      - 'public/jlpt/practice/**'
       - '.github/workflows/jlpt-database.yml'
   pull_request:
     paths:
@@ -22,4 +24,6 @@ jobs:
         with:
           python-version: '3.11'
       - name: Test JLPT database
-        run: python3 scripts/test_jlpt_db.py
+        run: |
+          python3 scripts/test_jlpt_db.py
+          python3 scripts/test_jlpt_content.py
