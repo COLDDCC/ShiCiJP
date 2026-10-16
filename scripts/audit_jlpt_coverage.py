@@ -50,7 +50,7 @@ def inspect(root=ROOT):
     return {"review_status":data.get("review_status","unknown"),
             "unique_reference_words":len(known),"draft_entries":len(by_key),
             "drafts_matching_reference":len(targets),
-            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,"invalid_aliases":invalid_aliases,
+            "levels":stats,"issues":problems,"unmatched_reference_entries":unmatched,"unmatched_draft_count":len(unmatched),"invalid_aliases":invalid_aliases,
             "note":"Draft coverage is not reviewed/approved Chinese translation coverage."}
 
 if __name__=="__main__":
