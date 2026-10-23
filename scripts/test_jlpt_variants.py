@@ -17,6 +17,9 @@ assert coverage["drafts_matching_reference"]+coverage["unmatched_draft_count"]==
 assert coverage["unmatched_draft_count"]==len(coverage["unmatched_reference_entries"])
 assert coverage["unmatched_draft_count"]==len(coverage["unmatched_draft_details"])
 assert all(item["reason"]=="not_in_reference" for item in coverage["unmatched_draft_details"])
+assert coverage["levels"]["N5"]["missing"]==0, "N5 draft coverage has regressed"
+assert coverage["levels"]["N5"]["chinese_drafts"]==coverage["levels"]["N5"]["reference_words"], "N5 drafts must cover every reference word"
+assert coverage["review_status"]=="draft_editorial_review", "Drafts must not be represented as approved translations"
 
 with tempfile.TemporaryDirectory() as tmp:
     root=Path(tmp)
@@ -41,6 +44,8 @@ with tempfile.TemporaryDirectory() as tmp:
     publish(db,root/"export")
     exported={level:json.loads((root/"export"/(level+".json")).read_text(encoding="utf-8")) for level in ("n1","n2","n3","n4","n5")}
     data=exported["n5"]
+    assert len(data["words"])==coverage["levels"]["N5"]["reference_words"], "N5 export size differs from reference coverage"
+    assert all(w["meaning_zh"] and w["example_ja"] and w["example_zh"] for w in data["words"]), "N5 export contains incomplete Chinese drafts"
     entries=[w for w in data["words"] if w["expression"]=="かばん" and w["reading"]=="かばん"]
     assert len(entries)==1,entries
     assert entries[0]["meaning_zh"]==variant["meaning_zh"],entries
