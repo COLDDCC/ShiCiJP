@@ -1758,7 +1758,7 @@
     {
       "expression": "方",
       "reading": "かた",
-      "meaning_zh": "人（礼貌说法）；方式",
+      "meaning_zh": "人；位（对人的礼貌称呼）；……的方法（接动词ます形词干）",
       "example_ja": "あの方は先生です。",
       "example_zh": "那位是老师。",
       "level_hint": "N5"
@@ -2183,8 +2183,8 @@
       "expression": "死ぬ",
       "reading": "しぬ",
       "meaning_zh": "死亡；死去",
-      "example_ja": "花が水不足で死んでしまいました。",
-      "example_zh": "花因为缺水枯死了。",
+      "example_ja": "飼っていた魚が死んでしまいました。",
+      "example_zh": "养的鱼死了。",
       "level_hint": "N5"
     },
     {
@@ -4047,7 +4047,7 @@
       "expression": "一月",
       "reading": "ひとつき",
       "meaning_zh": "一个月",
-      "example_ja": "日本に一月いました。",
+      "example_ja": "日本にひと月いました。",
       "example_zh": "在日本待了一个月。",
       "level_hint": "N5"
     },
@@ -4247,8 +4247,8 @@
       "expression": "ページ",
       "reading": "ページ",
       "meaning_zh": "页；页面",
-      "example_ja": "十ページを読んでください。",
-      "example_zh": "请读第十页。",
+      "example_ja": "この本を十ページ読んでください。",
+      "example_zh": "请读这本书的十页内容。",
       "level_hint": "N5"
     },
     {
@@ -4319,7 +4319,7 @@
       "expression": "外",
       "reading": "ほか",
       "meaning_zh": "其他；别的",
-      "example_ja": "外に質問はありますか。",
+      "example_ja": "ほかに質問はありますか。",
       "example_zh": "还有其他问题吗？",
       "level_hint": "N5"
     },
@@ -5023,8 +5023,8 @@
       "expression": "留学生",
       "reading": "りゅうがくせい",
       "meaning_zh": "留学生",
-      "example_ja": "友達は日本の留学生です。",
-      "example_zh": "朋友是在日本的留学生。",
+      "example_ja": "友達は日本で勉強している留学生です。",
+      "example_zh": "朋友是在日本学习的留学生。",
       "level_hint": "N5"
     },
     {
@@ -5583,8 +5583,8 @@
       "expression": "十",
       "reading": "(〜を) とお",
       "meaning_zh": "十个（传统计数）",
-      "example_ja": "十まで数えます。",
-      "example_zh": "数到十。",
+      "example_ja": "みかんを十（とお）ください。",
+      "example_zh": "请给我十个橘子。",
       "level_hint": "N5"
     },
     {
@@ -5727,8 +5727,8 @@
       "expression": "～前",
       "reading": "～まえ",
       "meaning_zh": "……之前；……前面",
-      "example_ja": "駅の前で待ちます。",
-      "example_zh": "在车站前等。",
+      "example_ja": "寝る前に本を読みます。",
+      "example_zh": "睡觉前读书。",
       "level_hint": "N5"
     },
     {

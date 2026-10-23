@@ -45,7 +45,8 @@ with tempfile.TemporaryDirectory() as tmp:
     exported={level:json.loads((root/"export"/(level+".json")).read_text(encoding="utf-8")) for level in ("n1","n2","n3","n4","n5")}
     data=exported["n5"]
     assert len(data["words"])==coverage["levels"]["N5"]["reference_words"], "N5 export size differs from reference coverage"
-    assert all(w["meaning_zh"] and w["example_ja"] and w["example_zh"] for w in data["words"]), "N5 export contains incomplete Chinese drafts"
+    assert all(isinstance(w[field],str) and w[field].strip()
+               for w in data["words"] for field in ("meaning_zh","example_ja","example_zh")), "N5 export contains incomplete Chinese drafts"
     entries=[w for w in data["words"] if w["expression"]=="かばん" and w["reading"]=="かばん"]
     assert len(entries)==1,entries
     assert entries[0]["meaning_zh"]==variant["meaning_zh"],entries
@@ -53,6 +54,7 @@ with tempfile.TemporaryDirectory() as tmp:
     assert entries[0]["example_zh"]==variant["example_zh"],entries
     assert data["official_exam_appearances_available"] is False
     for level,payload in exported.items():
+        assert payload["review_status"]=="draft_editorial_review",level
         assert payload["level"]==level.upper(),level
         assert payload["official_exam_appearances_available"] is False,level
         assert payload["level_classification"]=="community_reference_not_official",level

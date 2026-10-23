@@ -18,7 +18,8 @@ def apply_chinese_entries(con):
         if key in seen:
             raise ValueError("Duplicate Chinese vocabulary entry: "+repr(key))
         seen.add(key)
-        if not all(item.get(k) for k in ("meaning_zh","example_ja","example_zh")):
+        if not all(isinstance(item.get(k),str) and item[k].strip()
+                   for k in ("meaning_zh","example_ja","example_zh")):
             raise ValueError("Missing translation or example: "+repr(key))
         target=(item.get("variant_of") or item["expression"],item["reading"])
         row=con.execute("SELECT id FROM vocabulary WHERE expression=? AND reading=?",target).fetchone()
@@ -35,7 +36,8 @@ def publish(db_path: Path, destination: Path) -> None:
     destination.mkdir(parents=True, exist_ok=True)
     with sqlite3.connect(str(db_path)) as con:
         con.execute("PRAGMA foreign_keys=ON")
-        examples={ (x["expression"],x["reading"]):x for x in json.loads((ROOT/"database/content/vocabulary-zh-reviewed.json").read_text(encoding="utf-8"))["entries"] }
+        content=json.loads((ROOT/"database/content/vocabulary-zh-reviewed.json").read_text(encoding="utf-8"))
+        examples={ (x["expression"],x["reading"]):x for x in content["entries"] }
         for item in list(examples.values()):
             if item.get("variant_of"):
                 target=(item["variant_of"],item["reading"])
@@ -59,6 +61,7 @@ def publish(db_path: Path, destination: Path) -> None:
                       "example_ja":examples.get((r[1],r[2]),{}).get("example_ja"),
                       "example_zh":examples.get((r[1],r[2]),{}).get("example_zh")} for r in rows]
             payload = {"level":level,"source":"jamsinclair/open-anki-jlpt-decks",
+                       "review_status":content["review_status"],
                        "level_classification":"community_reference_not_official",
                        "official_exam_appearances_available":False,
                        "words":words}
@@ -70,24 +73,28 @@ def publish(db_path: Path, destination: Path) -> None:
         print("Verified official frequency entries:",official)
 
 
-def main():
-    parser=argparse.ArgumentParser()
-    parser.add_argument("--db",type=Path,default=ROOT/"database"/"jlpt.sqlite")
-    parser.add_argument("--output",type=Path,default=ROOT/"public"/"jlpt"/"vocabulary"/"data")
-    args=parser.parse_args()
+def build_content(db_path: Path, destination: Path) -> None:
     audit=inspect()
     if audit["issues"]:
         raise ValueError("Vocabulary editorial issues: "+repr(audit["issues"][:10]))
     print("Chinese draft coverage:", {k:v["coverage_percent"] for k,v in audit["levels"].items()})
-    build(args.db)
-    with sqlite3.connect(str(args.db)) as con:
+    build(db_path)
+    with sqlite3.connect(str(db_path)) as con:
         con.execute("PRAGMA foreign_keys=ON")
         import_questions(con)
         apply_chinese_entries(con)
         errors=con.execute("PRAGMA foreign_key_check").fetchall()
         if errors: raise RuntimeError("Foreign key errors: "+repr(errors[:5]))
         print("Original practice questions:",con.execute("SELECT COUNT(*) FROM questions").fetchone()[0])
-    publish(args.db,args.output)
+    publish(db_path,destination)
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--db",type=Path,default=ROOT/"database"/"jlpt.sqlite")
+    parser.add_argument("--output",type=Path,default=ROOT/"public"/"jlpt"/"vocabulary"/"data")
+    args=parser.parse_args()
+    build_content(args.db,args.output)
 
 
 if __name__=="__main__":

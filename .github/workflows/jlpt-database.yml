@@ -9,6 +9,8 @@ on:
       - 'scripts/audit_jlpt_coverage.py'
       - 'scripts/sync_jlpt_drafts.py'
       - 'scripts/test_jlpt_variants.py'
+      - 'scripts/test_jlpt_quality.py'
+      - 'scripts/export_jlpt_vocab.py'
       - 'scripts/import_jlpt_questions.py'
       - 'public/jlpt/vocabulary/**'
       - 'scripts/test_jlpt_db.py'
@@ -24,6 +26,8 @@ on:
       - 'scripts/audit_jlpt_coverage.py'
       - 'scripts/sync_jlpt_drafts.py'
       - 'scripts/test_jlpt_variants.py'
+      - 'scripts/test_jlpt_quality.py'
+      - 'scripts/export_jlpt_vocab.py'
       - 'scripts/import_jlpt_questions.py'
       - 'scripts/test_jlpt_db.py'
       - 'scripts/test_jlpt_content.py'
@@ -45,6 +49,7 @@ jobs:
           python3 scripts/audit_jlpt_coverage.py --strict --output /tmp/jlpt-coverage.json
           python3 scripts/sync_jlpt_drafts.py --check
           python3 scripts/test_jlpt_variants.py
+          python3 scripts/test_jlpt_quality.py
           python3 scripts/build_jlpt_content.py --db /tmp/shicijp-jlpt-ci.sqlite --output /tmp/shicijp-jlpt-export
       - name: Publish JLPT coverage audit
         if: always()

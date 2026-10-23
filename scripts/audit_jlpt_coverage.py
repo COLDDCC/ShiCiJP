@@ -11,14 +11,19 @@ def inspect(root=ROOT):
     entries=data["entries"]
     by_key={}
     problems=[]
+    if data.get("review_status") != "draft_editorial_review":
+        problems.append("Chinese drafts must retain draft_editorial_review status")
     for i,item in enumerate(entries,1):
         key=(item.get("expression","").strip(),item.get("reading","").strip())
         if not key[0]: problems.append(f"entry {i}: missing expression")
+        if not key[1]: problems.append(f"entry {i}: missing reading")
         if key in by_key: problems.append(f"entry {i}: duplicate {key}")
         by_key[key]=item
         if item.get("variant_of") and item["variant_of"]==key[0]: problems.append(f"entry {i}: variant_of points to itself")
         for field in ("meaning_zh","example_ja","example_zh"):
-            if not item.get(field,"").strip(): problems.append(f"entry {i}: missing {field}")
+            value=item.get(field)
+            if not isinstance(value,str) or not value.strip():
+                problems.append(f"entry {i}: missing {field}")
     stats={}
     known=set()
     for level in LEVELS:

@@ -63,6 +63,12 @@ Do not claim the static website is already reading the exported JSON.
 
 Run `npm run test:jlpt-content` before publishing updated questions.
 
+For vocabulary quality regressions, run `python3 scripts/test_jlpt_quality.py`
+and `python3 scripts/test_jlpt_variants.py`. Exported JSON includes
+`review_status: draft_editorial_review`; full draft coverage does not mean
+linguistic approval. See [N5 quality notes](N5-quality-notes.md) for the focused
+editorial pass and remaining review scope.
+
 ### Completion criteria
 
 - N1–N5 vocabulary source and level provenance retained, with separately
