@@ -4,3 +4,6 @@ __pycache__/
 artifact/
 database/*.sqlite
 database/*.sqlite-*
+
+# N5 HTML is generated and verified before GitHub Pages deployment.
+public/jlpt/vocabulary/n5/

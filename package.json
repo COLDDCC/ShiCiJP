@@ -5,7 +5,7 @@
   "scripts": {
     "fetch": "bash scripts/fetch_sources.sh",
     "build:dict": "python3 scripts/build_dict.py",
-    "serve": "python3 -m http.server 8000 -d public",
+    "serve": "python3 scripts/build_n5_pages.py && python3 -m http.server 8000 -d public",
     "test": "node scripts/smoke_test.js",
     "build:jlpt-db": "python3 scripts/build_jlpt_db.py",
     "test:jlpt-db": "python3 scripts/test_jlpt_db.py",
@@ -13,7 +13,11 @@
     "import:jlpt-questions": "python3 scripts/import_jlpt_questions.py",
     "build:jlpt-content": "python3 scripts/build_jlpt_content.py",
     "test:jlpt-content": "python3 scripts/test_jlpt_content.py",
-    "audit:jlpt-coverage": "python3 scripts/audit_jlpt_coverage.py --strict"
+    "audit:jlpt-coverage": "python3 scripts/audit_jlpt_coverage.py --strict",
+    "build:n5-pages": "python3 scripts/build_n5_pages.py",
+    "test:n5-pages": "python3 scripts/test_n5_pages.py",
+    "test:jlpt-quality": "python3 scripts/test_jlpt_quality.py",
+    "test:n5-browser": "node scripts/e2e_n5_pages.js"
   },
   "repository": {
     "type": "git",
