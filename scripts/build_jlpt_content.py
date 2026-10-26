@@ -8,6 +8,7 @@ from pathlib import Path
 from build_jlpt_db import ROOT, LEVELS, build
 from import_jlpt_questions import import_questions
 from audit_jlpt_coverage import inspect
+from jlpt_word_urls import word_path
 
 
 def apply_chinese_entries(con):
@@ -60,6 +61,9 @@ def publish(db_path: Path, destination: Path) -> None:
                       "original_practice_question_count":r[5],
                       "example_ja":examples.get((r[1],r[2]),{}).get("example_ja"),
                       "example_zh":examples.get((r[1],r[2]),{}).get("example_zh")} for r in rows]
+            if level == "N5":
+                for word in words:
+                    word["url"] = word_path(word)
             payload = {"level":level,"source":"jamsinclair/open-anki-jlpt-decks",
                        "review_status":content["review_status"],
                        "level_classification":"community_reference_not_official",

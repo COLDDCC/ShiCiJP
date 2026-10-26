@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check generated N5 content, canonical URLs, link graph and reproducibility."""
 import html
+import json
 import shutil
 import tempfile
 import unittest
@@ -55,6 +56,12 @@ class N5PageTests(unittest.TestCase):
             shutil.copy(ROOT / 'public/sitemap.xml', root / 'sitemap.xml')
             pages, words = build_pages(root)
             self.assertEqual(len(words), 718)
+            index = json.loads((root / 'jlpt/vocabulary/data/n5.json').read_text(encoding='utf-8'))
+            self.assertEqual(index['review_status'], 'draft_editorial_review')
+            self.assertEqual(len(index['words']), len(words))
+            for word in index['words']:
+                self.assertIn(word['url'], pages)
+                self.assertEqual(word['url'], word_path(word))
             self.assertEqual(len(pages), 732)
             titles, descriptions, canonicals = set(), set(), set()
             inbound = set()

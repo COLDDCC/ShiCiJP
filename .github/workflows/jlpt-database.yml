@@ -12,7 +12,12 @@ on:
       - 'scripts/test_jlpt_quality.py'
       - 'scripts/export_jlpt_vocab.py'
       - 'scripts/build_n5_pages.py'
+      - 'scripts/jlpt_word_urls.py'
       - 'scripts/test_n5_pages.py'
+      - 'scripts/test_review_store.js'
+      - 'public/js/review-store.js'
+      - 'public/js/learning-home.js'
+      - 'public/jlpt/review/**'
       - 'scripts/import_jlpt_questions.py'
       - 'public/jlpt/vocabulary/**'
       - 'scripts/test_jlpt_db.py'
@@ -31,7 +36,12 @@ on:
       - 'scripts/test_jlpt_quality.py'
       - 'scripts/export_jlpt_vocab.py'
       - 'scripts/build_n5_pages.py'
+      - 'scripts/jlpt_word_urls.py'
       - 'scripts/test_n5_pages.py'
+      - 'scripts/test_review_store.js'
+      - 'public/js/review-store.js'
+      - 'public/js/learning-home.js'
+      - 'public/jlpt/review/**'
       - 'scripts/import_jlpt_questions.py'
       - 'scripts/test_jlpt_db.py'
       - 'scripts/test_jlpt_content.py'
@@ -43,6 +53,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -55,6 +68,7 @@ jobs:
           python3 scripts/test_jlpt_variants.py
           python3 scripts/test_jlpt_quality.py
           python3 scripts/test_n5_pages.py
+          node scripts/test_review_store.js
           python3 scripts/build_jlpt_content.py --db /tmp/shicijp-jlpt-ci.sqlite --output /tmp/shicijp-jlpt-export
       - name: Publish JLPT coverage audit
         if: always()

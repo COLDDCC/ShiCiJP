@@ -11,6 +11,7 @@ from audit_jlpt_coverage import inspect
 from build_jlpt_db import ROOT
 from build_jlpt_content import build_content
 from export_jlpt_vocab import export
+from jlpt_word_urls import word_path
 
 
 class DraftQualityTests(unittest.TestCase):
@@ -70,6 +71,7 @@ class DraftQualityTests(unittest.TestCase):
                 if level == "n5":
                     self.assertEqual(len(standalone["words"]), 718)
                     for word in standalone["words"]:
+                        self.assertEqual(word["url"], word_path(word))
                         for field in ("meaning_zh", "example_ja", "example_zh"):
                             self.assertTrue(word[field].strip(), (word["expression"], field))
 

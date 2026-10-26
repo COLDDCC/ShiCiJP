@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Generate crawlable N5 pages from the same database export as the vocabulary UI."""
 import argparse
-import hashlib
 import html
 import json
 import re
@@ -12,9 +11,10 @@ from pathlib import Path
 
 from build_jlpt_content import build_content
 from build_jlpt_db import ROOT
+from jlpt_word_urls import N5_BASE, word_path
 
 ORIGIN = 'https://shicijp.com'
-BASE = '/jlpt/vocabulary/n5/'
+BASE = N5_BASE
 GROUPS = {
     'numbers': ('数字与日期', '数字、数量、日期与时长读法'),
     'affixes': ('前缀与后缀', '敬语前缀、量词与接尾表达'),
@@ -38,11 +38,6 @@ def esc(value):
 
 def key(word):
     return (word['expression'], word['reading'])
-
-
-def word_path(word):
-    identity = json.dumps(key(word), ensure_ascii=False, separators=(',', ':'))
-    return BASE + 'w-' + hashlib.sha256(identity.encode('utf-8')).hexdigest()[:16] + '/'
 
 
 def category(word):
@@ -70,8 +65,9 @@ def layout(title, description, path, body):
 <title>{esc(title)} | 拾词</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="{ORIGIN}{path}"><link rel="icon" href="/favicon.ico">
 <link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/jlpt/vocabulary/n5-pages.css">
-<script src="/jlpt/vocabulary/n5-pages.js" defer></script></head><body>
-<header class="n5-header"><a class="n5-brand" href="/">拾词</a><nav aria-label="主导航"><a href="/jlpt/">学习中心</a><a href="/jlpt/vocabulary/">词库搜索</a></nav></header>
+<link rel="stylesheet" href="/css/learning.css">
+<script src="/js/review-store.js" defer></script><script src="/jlpt/vocabulary/n5-pages.js" defer></script></head><body>
+<header class="n5-header"><a class="n5-brand" href="/">拾词</a><nav aria-label="主导航"><a href="/jlpt/">学习中心</a><a href="/jlpt/vocabulary/">词库搜索</a><a href="/jlpt/review/">我的复习</a></nav></header>
 <main class="n5-main">{body}</main>
 <footer class="n5-footer">社区参考词表，不是官方固定考试清单。中文释义与例句为草稿，待审核。</footer>
 </body></html>\n'''
@@ -127,6 +123,8 @@ def render(words):
             body += f'<p class="n5-reading" lang="ja">{esc(word["reading"])}</p><span class="n5-badge">中文草稿 · 待审核</span>'
             body += f'<h2>中文释义</h2><p class="n5-meaning">{esc(word["meaning_zh"])}</p><h2>例句</h2>'
             body += f'<p class="n5-example" lang="ja">{esc(word["example_ja"])}</p><p>{esc(word["example_zh"])}</p></article>'
+            identity = esc(json.dumps(key(word), ensure_ascii=False, separators=(',', ':')))
+            body += f'<div class="review-controls" data-review-id="{identity}" hidden><button class="learn-button" type="button" data-review-action="learning" aria-pressed="false">加入复习</button><button class="learn-button" type="button" data-review-action="known" aria-pressed="false">标记认识</button><p role="status" aria-live="polite" data-review-status>记录仅存当前浏览器。</p></div>'
             body += '<nav class="n5-word-nav" aria-label="同组词汇">' + ''.join(links) + '</nav>' + source_note()
             if wpath in pages:
                 raise ValueError('Duplicate canonical path: ' + wpath)
@@ -150,6 +148,10 @@ def build_pages(public_root):
             if not isinstance(word.get(field), str) or not word[field].strip():
                 raise ValueError(f'Incomplete N5 word: {key(word)} / {field}')
     pages = render(words)
+    # This same payload powers homepage search, the vocabulary UI and local review.
+    index = public_root / 'jlpt/vocabulary/data/n5.json'
+    index.parent.mkdir(parents=True, exist_ok=True)
+    index.write_text(json.dumps(payload, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     destination = public_root / BASE.strip('/')
     expected = {public_root / path.strip('/') / 'index.html' for path in pages}
     if destination.exists():

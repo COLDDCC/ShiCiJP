@@ -22,6 +22,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -30,6 +33,7 @@ jobs:
           python3 scripts/sync_jlpt_drafts.py --check
           python3 scripts/test_jlpt_quality.py
           python3 scripts/test_n5_pages.py
+          node scripts/test_review_store.js
       - name: Build crawlable N5 vocabulary pages
         run: python3 scripts/build_n5_pages.py
       - uses: actions/configure-pages@v5

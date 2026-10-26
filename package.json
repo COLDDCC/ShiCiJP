@@ -17,7 +17,9 @@
     "build:n5-pages": "python3 scripts/build_n5_pages.py",
     "test:n5-pages": "python3 scripts/test_n5_pages.py",
     "test:jlpt-quality": "python3 scripts/test_jlpt_quality.py",
-    "test:n5-browser": "node scripts/e2e_n5_pages.js"
+    "test:n5-browser": "node scripts/e2e_n5_pages.js",
+    "test:review-store": "node scripts/test_review_store.js",
+    "test:learning-browser": "node scripts/e2e_learning.js"
   },
   "repository": {
     "type": "git",
