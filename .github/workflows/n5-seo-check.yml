@@ -1,0 +1,20 @@
+name: N5 static SEO checks
+on:
+  pull_request:
+    paths:
+      - "scripts/build_n5_seo_pages.py"
+      - "scripts/test_n5_seo_pages.py"
+      - "data-src/n5.csv"
+      - "database/content/vocabulary-zh-reviewed.json"
+      - "public/sitemap.xml"
+      - ".github/workflows/n5-seo-check.yml"
+  workflow_dispatch:
+jobs:
+  n5-seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build N5 pages
+        run: python3 scripts/build_n5_seo_pages.py
+      - name: Check generated pages
+        run: python3 scripts/test_n5_seo_pages.py
