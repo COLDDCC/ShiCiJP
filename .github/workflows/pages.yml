@@ -36,6 +36,8 @@ jobs:
           node scripts/test_review_store.js
       - name: Build crawlable N5 vocabulary pages
         run: python3 scripts/build_n5_pages.py
+      - name: Guard learning experience and sitemap
+        run: python3 scripts/test_learning_deploy_integrity.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
