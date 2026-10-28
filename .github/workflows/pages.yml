@@ -44,3 +44,6 @@ jobs:
           path: public
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify production URLs after deploy
+        run: |
+          python3 scripts/check_live_site.py
