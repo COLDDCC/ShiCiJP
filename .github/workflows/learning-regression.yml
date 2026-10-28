@@ -11,6 +11,8 @@ on:
       - 'public/css/**'
       - 'public/jlpt/vocabulary/**'
       - 'scripts/e2e_learning.js'
+      - 'scripts/e2e_test.js'
+      - '.github/workflows/pages.yml'
       - '.github/workflows/learning-regression.yml'
   workflow_dispatch:
 jobs:
@@ -41,3 +43,4 @@ jobs:
           trap 'kill $SERVER_PID || true' EXIT
           for i in $(seq 1 20); do curl -fsS http://localhost:8000/ >/dev/null && break; sleep 1; done
           BASE=http://localhost:8000 node scripts/e2e_learning.js
+          BASE=http://localhost:8000/ node scripts/e2e_test.js
