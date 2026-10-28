@@ -367,3 +367,15 @@ dialog h2 { margin: 0 0 4px; font-size: 1.25rem; }
 .reader-item button{cursor:pointer;background:transparent;border:0;font-size:1rem}
 .speak-word{background:transparent;border:0;cursor:pointer;font-size:1.05rem;padding:.3rem;flex-shrink:0}
 .speak-word:hover,.speak-word:focus-visible{background:rgba(22,94,131,.1);border-radius:6px}
+
+/* 320px devices: prevent header/actions from setting a page-wide minimum width. */
+@media (max-width: 380px) {
+  .site-header { flex-wrap: wrap; row-gap: 8px; }
+  .site-header .nav { flex: 1 1 100%; justify-content: flex-start; gap: 8px 12px; }
+  .site-header .logo { font-size: 2rem; }
+  .row, .search-row, .search, .search-inner, .columns, .primary { min-width: 0; max-width: 100%; }
+  .search-inner > textarea { min-width: 0; flex: 1 1 0; }
+  .search-row .input-methods { flex-wrap: wrap; }
+  .reader-panel, .results, .concept, .zen { min-width: 0; overflow-wrap: anywhere; }
+  #exportText { box-sizing: border-box; }
+}

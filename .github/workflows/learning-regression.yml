@@ -8,12 +8,19 @@ on:
       - 'public/index.html'
       - 'public/js/learning-home.js'
       - 'public/jlpt/review/**'
+      - 'public/css/**'
+      - 'public/jlpt/vocabulary/**'
+      - 'scripts/e2e_learning.js'
+      - '.github/workflows/learning-regression.yml'
   workflow_dispatch:
 jobs:
   learning:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -22,3 +29,15 @@ jobs:
       - run: python3 scripts/test_n5_pages.py
       - run: python3 scripts/test_learning_deploy_integrity.py
       - run: node scripts/test_review_store.js
+      - name: Install browser test runtime
+        run: |
+          npm ci
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Browser regression (desktop, mobile, dark mode, keyboard)
+        run: |
+          python3 -m http.server 8000 -d public > /tmp/shici-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          for i in $(seq 1 20); do curl -fsS http://localhost:8000/ >/dev/null && break; sleep 1; done
+          BASE=http://localhost:8000 node scripts/e2e_learning.js

@@ -52,7 +52,8 @@ const BASE = process.env.BASE || 'http://localhost:8000';
       for (const path of ['/', first, '/jlpt/review/']) {
         await page.goto(BASE + path, { waitUntil: 'domcontentloaded' });
         if (path.endsWith('/review/')) await page.locator('#review-card').waitFor();
-        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${width}px ${path}`);
+        const overflow = await page.evaluate(() => ({scroll: document.documentElement.scrollWidth, width: innerWidth, elements: [...document.querySelectorAll('body *')].map(e => ({tag: e.tagName, id:e.id, cls: String(e.className).slice(0,70), right:Math.round(e.getBoundingClientRect().right), left:Math.round(e.getBoundingClientRect().left)})).filter(e => e.right > innerWidth + 1 || e.left < -1).slice(0,12)}));
+        assert.ok(overflow.scroll <= overflow.width, `${width}px ${path} ${JSON.stringify(overflow)}`);
       }
     }
     await page.emulateMedia({ colorScheme: 'dark' });
